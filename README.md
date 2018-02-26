@@ -5,6 +5,9 @@
 desktop landing page wireframe link
 https://wireframe.cc/6brMMI
 
+desktop modal for login/signup
+https://wireframe.cc/FWMdcg
+
 desktop show page for an item
 https://wireframe.cc/qXCmKK
 
