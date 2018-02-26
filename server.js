@@ -28,6 +28,7 @@ app.get('/', function(req, res) {
   res.render('landing');
 });
 
+app.use('/users', require('./routes/users'));
 // app.use('/auth', require('./routes/auth'));
 // ~~~~~~~ NEED OTHER ROUTES HERE
 
