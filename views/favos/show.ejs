@@ -1,0 +1,53 @@
+<% include ../partials/header-top %>
+
+
+<!-- DOES THIS WORK FOR TAB????? -->
+<% results.Similar.Info.forEach(function(item) { %>
+<title>yo! favo | <%= item.Name %> %></title>
+<% }); %>
+
+
+<% include ../partials/header-bottom %>
+
+<!-- body content goes below here -->
+
+<div class="row">
+  <div class="col s4 offset-s1 center-align">
+    <h1 class="h1-landing">yo! favo</h1>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col s5 offset-s6">
+    <form action="#" method="#">
+      <input type="text" name="search-input" placeholder="search music, movies, tv shows, games...">
+      <input type="submit">
+    </form>
+  </div>
+</div>
+
+<hr>
+
+
+<!-- TEST API INFO BELOW HERE -->
+
+<h3>results.Similar.Info</h3>
+
+<% results.Similar.Info.forEach(function(item) { %>
+  <p><%= item.Name %></p>
+  <p><%= item.Type %></p>
+  <p><%= item.wTeaser %></p>
+  <p><%= item.wUrl %></p>
+  <p><%= item.yUrl %></p>
+  <p><%= item.yId %></p>
+
+<% }); %>
+
+
+
+
+<!-- body content goes above here  -->
+
+<% include ../partials/footer %>

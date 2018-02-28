@@ -2,7 +2,27 @@
 
 <!-- title tags go here for each page -->
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+  <%- JSON.stringify(currentUser) %>
+  <% include alerts %>
+
+<div  class="nav-test">
+  <a href="/">Home page</a>
+  <span> | </span>
+  <a href="/favos">all favos from search</a>
+  <span> | </span>
+  <a href="/favos/1">favos show</a>
+  <span> | </span>
+  <a href="/auth/login">Login page</a>
+  <span> | </span>
+  <a href="/auth/signup">Signup page</a>
+  <span> | </span>
+  <!-- fix this link -->
+  <a href="/users/1/profile">Users 1 profile page</a>
+  <span> | </span>
+  <a href="/auth/logout">Logout</a>
+</div>

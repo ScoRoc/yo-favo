@@ -15,9 +15,23 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// init SESSION
-// init FLASH
-// init PASSPORT
+app.use(session({
+  secret: process.env.SESSION_SECRET,  // make up a secret and place in .env; the string doesnt matter
+  resave: false,
+  saveUninitialized: true
+}));
+
+app.use(flash());  // must be after app.use(session)
+
+app.use(passport.initialize());  // must be after app.use(session)
+app.use(passport.session());  // must be after app.use(session)
+
+app.use(function(req, res, next) {
+  // before every route attach the flash messages and current user to res.locals
+  res.locals.alerts = req.flash();
+  res.locals.currentUser = req.user;
+  next();
+});
 
 app.use(function(req, res, next) {
   res.locals.moment = moment;
@@ -29,7 +43,8 @@ app.get('/', function(req, res) {
 });
 
 app.use('/users', require('./routes/users'));
-// app.use('/auth', require('./routes/auth'));
+app.use('/favos', require('./routes/favos'));
+app.use('/auth', require('./routes/auth'));
 // ~~~~~~~ NEED OTHER ROUTES HERE
 
 var server = app.listen(process.env.PORT || 3000);

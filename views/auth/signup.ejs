@@ -1,0 +1,44 @@
+<% include ../partials/header-top %>
+
+<title>yo! favo | Signup</title>
+
+<% include ../partials/header-bottom %>
+
+<div class="row">
+  ~~~~~~~~~~space filler.........
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s3">
+    <form action="/auth/signup" method="POST">
+
+      <div class="input-field">
+        <i class="material-icons prefix">person_outline</i>
+        <input class="validate" id="authFirstName" type="text" name="first_name">
+        <label for="authName">First Name</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">person_outline</i>
+        <input class="validate" id="authLastName" type="text" name="last_name">
+        <label for="authName">Last Name</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">mail_outline</i>
+        <input class="validate" id="authEmail" class="form-control" type="email" name="email">
+        <label for="authEmail">Email</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">lock_outline</i>
+        <input class="validate" id="authPassword" type="password" name="password">
+        <label for="authPassword">Password</label>
+      </div>
+
+      <input type="submit">
+    </form>
+  </div>
+</div>
+
+<% include ../partials/footer %>
