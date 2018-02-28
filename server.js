@@ -33,6 +33,10 @@ app.use(function(req, res, next) {
   next();
 });
 
+
+///////TO FIND USER USE REQ.USER.ID IN ANY ROUTE THAT HAS REQ,RES////////
+
+
 app.use(function(req, res, next) {
   res.locals.moment = moment;
   next();
