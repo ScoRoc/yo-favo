@@ -9,12 +9,12 @@ router.get('/', function(req, res) {
 });
 
 router.get('/:id/profile', isLoggedIn, function(req, res) {
-  res.render('users/show')
+  db.user.find({
+    where: {id: req.user.id}
+  }).then(function(user) {
+    res.render('users/show')
+  });
 });
-
-
-
-
 
 
 

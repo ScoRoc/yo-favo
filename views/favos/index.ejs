@@ -21,7 +21,7 @@
 
 <div class="row">
   <div class="col s5 offset-s6">
-    <form action="#" method="#">
+    <form action="/favos/:name" method="get">
       <input type="text" name="search-input" placeholder="search music, movies, tv shows, games...">
       <input type="submit">
     </form>
@@ -52,23 +52,6 @@
 <% }); %>
 
 <hr>
-
-<h3>results.Similar.Results</h3>
-
-<% results.Similar.Results.forEach(function(item) { %>
-  <p><%= item.Name %></p>
-  <a>Add to favos</a>
-  <div class="divider"></div>
-  <p><%= item.Type %></p>
-  <p><%= item.wTeaser %></p>
-  <p><%= item.wUrl %></p>
-  <p><%= item.yUrl %></p>
-  <p><%= item.yId %></p>
-
-  <hr>
-
-<% }); %>
-
 
 
 

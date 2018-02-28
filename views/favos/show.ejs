@@ -18,11 +18,11 @@
 </div>
 
 <hr>
-
+<p>SHOW PAGE</p>
 <div class="row">
   <div class="col s5 offset-s6">
-    <form action="#" method="#">
-      <input type="text" name="search-input" placeholder="search music, movies, tv shows, games...">
+    <form action="/favos/:name" method="get">
+      <input type="text" name="search_name" placeholder="search music, movies, tv shows, games...">
       <input type="submit">
     </form>
   </div>
@@ -37,6 +37,20 @@
 
 <% results.Similar.Info.forEach(function(item) { %>
   <p><%= item.Name %></p>
+
+  <form action="/favos" method="post">
+    <input type="hidden" name="name" value="<%= item.Name %>">
+    <input type="hidden" name="type" value="<%= item.Type %>">
+    <input type="hidden" name="wTeaser" value="<%= item.wTeaser %>">
+    <input type="hidden" name="wUrl" value="<%= item.wUrl %>">
+    <input type="hidden" name="yUrl" value="<%= item.yUrl %>">
+    <input type="hidden" name="yId" value="<%= item.yId %>">
+
+    <input class="submit_favo" type="submit" value="Add to favos">
+  </form>
+
+  <div class="divider"></div>
+
   <p><%= item.Type %></p>
   <p><%= item.wTeaser %></p>
   <p><%= item.wUrl %></p>
