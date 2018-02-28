@@ -2,6 +2,11 @@ body {
   color: #3af;
 }
 
+footer p {
+  display: inline-block;
+  color: #06b;
+}
+
 .h1-landing {
   background: #bbb;
 }
@@ -20,4 +25,43 @@ body {
 
 .nav-test a {
   color: orange;
+}
+
+.test-img-col {
+  background: yellow;
+}
+
+.test-title-col {
+  background: yellow;
+}
+
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+#sortable li {
+  margin: 0 3px 3px 3px;
+  padding: 0.4em;
+  padding-left: 1.5em;
+  font-size: 1.4em;
+  height: 1.7em;
+  text-align: center;
+  position: relative;
+  cursor: -webkit-grab;
+  cursor: -moz-grag;
+  cursor: grab;
+}
+
+#sortable li:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grab;
+}
+
+#sortable li span {
+  position: absolute;
+  left: 0;
 }
