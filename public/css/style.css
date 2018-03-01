@@ -11,6 +11,15 @@ footer p {
   background: #bbb;
 }
 
+.my-nav {
+  position: fixed;
+  top: 0px;
+}
+
+#nav-search {
+  width: 27vw;
+}
+
 .foobar {
   color: red;
   font-size: 30px;

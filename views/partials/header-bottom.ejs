@@ -8,9 +8,8 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <%- JSON.stringify(currentUser) %>
 
-<div  class="nav-test">
+<!-- <div  class="nav-test">
   <a href="/">Home page</a>
   <span> | </span>
   <a href="/favos">all favos from search</a>
@@ -20,11 +19,63 @@
   <a href="/auth/login">Login page</a>
   <span> | </span>
   <a href="/auth/signup">Signup page</a>
-  <span> | </span>
+  <span> | </span> -->
   <!-- fix this link -->
-  <% if(currentUser) { %>
+  <!-- <% if(currentUser) { %>
     <a href="/users/<%= currentUser.id %>/profile">Users profile page</a>
   <% }; %>
   <span> | </span>
   <a href="/auth/logout">Logout</a>
+</div> -->
+
+
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="/">Home page</a></li>
+  <li><a href="/favos">all favos from search</a></li>
+  <li><a href="/favos/1">favos show</a></li>
+  <li><a href="/auth/login">Login page</a></li>
+  <li><a href="/auth/signup">Signup page</a></li>
+  <% if(currentUser) { %>
+    <li><a href="/users/<%= currentUser.id %>/profile">Users profile page</a></li>
+  <% }; %>
+  <li><a href="/auth/login">Logout</a></li>
+</ul>
+
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <div class="center row">
+             <div class="col s12 pull-s4">
+               <div class="row" id="topbarsearch">
+                 <div id="nav-search" class="input-field col s6 s12">
+                   <form action="/favos/:name" method="get">
+                     <i class="material-icons prefix">search</i>
+                     <input type="text" name="search_name" placeholder="search music, movies, tv shows, games...">
+                   </form>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="/">Home page</a></li>
+        <li><a href="/favos">all favos from search</a></li>
+        <li><a href="/favos/1">favos show</a></li>
+        <li><a href="/auth/login">Login page</a></li>
+        <li><a href="/auth/signup">Signup page</a></li>
+        <% if(currentUser) { %>
+          <a href="/users/<%= currentUser.id %>/profile">Users profile page</a>
+        <% }; %>
+        <li><a href="/auth/login">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
 </div>
+
+<%- JSON.stringify(currentUser) %>
