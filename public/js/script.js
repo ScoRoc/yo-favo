@@ -29,16 +29,19 @@ var updateOrder = function(event, ui) {
     });
 };
 
-// $('.delete-pokemon').on('click', function(e) {
-//   // e.preventDefault();
-//   var deleteUrl = $(this).attr('action');
-//   $.ajax({
-//     method: 'delete',
-//     url: deleteUrl
-//   }).done(function(data) {
-//     window.location = '/pokemon';
-//   });
-// });
+$('.delete-link').on('click', function(e) {
+  e.preventDefault();
+  var parent = $(this).parent();
+  var deleteUrl = $(this).attr('href');
+  var favoType = $(this).attr('data-type');
+  $.ajax({
+    method: 'delete',
+    url: deleteUrl
+  }).done(function(data) {
+    console.log($(this));
+    parent.remove();
+  });
+});
 
 $(function() {
   $('#sortable').sortable({

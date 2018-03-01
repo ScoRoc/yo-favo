@@ -12,7 +12,16 @@ music.ejs
 
 <div class="row">
   <div class="col s12 l5 offset-l1 test-img-col">
-    <p>img goes here</p>
+    <div class="row">
+      <div class="col s12">
+        <p>img goes here</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <a href="">Edit Profile</a>
+      </div>
+    </div>
   </div>
   <div class="col s12 l6">
     <div class="row">
@@ -27,8 +36,8 @@ music.ejs
             <% if (favo.type === 'music') { %>
               <li id="<%= favo.id %>" class="ui-state-default">
                 <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
-                <%= favo.name %>
-                <a href="/users/<%= currentUser.id %>/delete"><i class="right material-icons">close</i></a>
+                <a href="/favos/<%= favo.name %>"><%= favo.name %></a>
+                <a class='delete-link' data-type="<%= favo.type %>" href="/users/<%= currentUser.id %>/favos/<%= favo.id %>"><i class="right material-icons">close</i></a>
               </li>
             <% }; %>
           <% }); %>
@@ -37,7 +46,8 @@ music.ejs
     </div>
     <div class="row">
       <div class="col s8 offset-s2">
-        <a href="#">yo! top list</a>
+        <a href="/users/<%= currentUser.id %>/top">yo! top list</a>
+        <a href="/users/<%= currentUser.id %>/profile">...Profile...</a>
       </div>
     </div>
   </div>

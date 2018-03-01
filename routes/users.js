@@ -8,6 +8,17 @@ router.get('/', function(req, res) {
   res.send('list of all users');
 });
 
+router.delete('/:id/favos/:favoId', function(req, res) {
+  db.favos_users.destroy({
+    where: {
+      userId: req.user.id,
+      favoId: req.params.favoId
+    }
+  }).then(function(favoUser) {
+      res.send('success');
+  });
+});
+
 router.get('/:id/games', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
     'FROM favos_users ' +
@@ -42,11 +53,15 @@ router.get('/:id/music', isLoggedIn, function(req, res) {
 });
 
 router.get('/:id/top', isLoggedIn, function(req, res) {
-  db.user.find({
-    where: {id: req.user.id},
-    include: [db.favo]
-  }).then(function(user) {
-    res.render('users/top', {user: user});
+  db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos_users.order ' +
+  'FROM favos_users ' +
+  'JOIN favos ON favos.id = favos_users."favoId" ' +
+  'WHERE favos_users."userId" = ' + req.user.id + ' ' +
+  'AND favos_users.order = ( ' +
+  'SELECT MIN (favos_users.order) FROM favos_users)'
+  ).then(function(topFavos) {
+    console.log(topFavos);
+    res.render('users/top', {topFavos: topFavos});
   });
 });
 
@@ -69,9 +84,5 @@ router.get('/:id/profile', isLoggedIn, function(req, res) {
     res.render('users/show', {user: user});
   });
 });
-
-
-
-
 
 module.exports = router;

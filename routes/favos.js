@@ -38,9 +38,15 @@ router.get('/', function(req, res) {
 // but maybe add recomendation???
 router.get('/:name', function(req, res) {
   var tDurl = 'https://tastedive.com/api/similar';
+  var query = null;
+  if (req.query.search_name) {
+    query = req.query.search_name;
+  } else {
+    query = req.params.name;
+  };
   var taste_data = {
     k: process.env.TASTE_DIVE_KEY,
-    q: req.query.search_name,
+    q: query,
     limit: 5,
     info: 1
   };
@@ -55,11 +61,6 @@ router.get('/:name', function(req, res) {
     }
   });
 });
-
-
-
-
-// ~~~~~~~~~~TESTING POST ROUTE BELOW \\// \\// \\// \\//
 
 router.post('/', function(req, res) {
   db.favo.findOrCreate({
@@ -83,12 +84,6 @@ router.post('/', function(req, res) {
     });
   });
 });
-
-//~~~~~~~~~~~~ TESTING POST ROUTE ABOVE //\\ //\\ //\\ //\\
-
-
-
-
 
 router.put('/order', function(req, res) {
   db.favos_users.update({
