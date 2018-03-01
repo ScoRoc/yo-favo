@@ -1,0 +1,64 @@
+<% include ../partials/header-top %>
+
+<title>yo! favo | <%= user.first_name %>'s profile page</title>
+
+<% include ../partials/header-bottom %>
+
+<% include ../partials/profile-top %>
+
+<!-- body content goes below here -->
+
+
+<div class="row">
+  <div class="col s12 l5 offset-l1 test-img-col">
+    <div class="row">
+      <div class="col s12">
+        <p>img goes here</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <a href="/users/<%= currentUser.id %>/profile">yo! profile</a>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 l6">
+    form here
+    <form id="update-user-form" action="/users/<%= currentUser.id %>/update" method="PUT">
+
+      <div class="input-field">
+        <i class="material-icons prefix">person_outline</i>
+        <input class="validate" id="authFirstName" type="text" name="first_name" value="<%= user.first_name %>">
+        <label for="authName">First Name</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">person_outline</i>
+        <input class="validate" id="authLastName" type="text" name="last_name" value="<%= user.last_name %>">
+        <label for="authName">Last Name</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">mail_outline</i>
+        <input class="validate" id="authEmail" class="form-control" data-userId="<%= currentUser.id %>" type="email" name="email" value="<%= user.email %>">
+        <label for="authEmail">Email</label>
+      </div>
+
+      <!-- <div class="input-field">
+        <i class="material-icons prefix">lock_outline</i>
+        <input class="validate" id="authPassword" type="password" name="password">
+        <label for="authPassword">Password</label>
+      </div> -->
+
+      <input type="submit">
+    </form>
+  </div>
+</div>
+
+<script>var userId = '<%= currentUser.id %>'</script>
+
+<!-- body content goes above here  -->
+
+<% include ../partials/footer-content %>
+
+<% include ../partials/footer %>

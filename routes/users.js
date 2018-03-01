@@ -8,17 +8,7 @@ router.get('/', function(req, res) {
   res.send('list of all users');
 });
 
-router.delete('/:id/favos/:favoId', function(req, res) {
-  db.favos_users.destroy({
-    where: {
-      userId: req.user.id,
-      favoId: req.params.favoId
-    }
-  }).then(function(favoUser) {
-      res.send('success');
-  });
-});
-
+// GET user's top games page
 router.get('/:id/games', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
     'FROM favos_users ' +
@@ -30,6 +20,7 @@ router.get('/:id/games', isLoggedIn, function(req, res) {
   });
 });
 
+// GET user's top movies page
 router.get('/:id/movies', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
     'FROM favos_users ' +
@@ -41,6 +32,7 @@ router.get('/:id/movies', isLoggedIn, function(req, res) {
   });
 });
 
+// GET user's top music page
 router.get('/:id/music', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
     'FROM favos_users ' +
@@ -52,6 +44,7 @@ router.get('/:id/music', isLoggedIn, function(req, res) {
   });
 });
 
+// GET user's top list page
 router.get('/:id/top', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos_users.order ' +
   'FROM favos_users ' +
@@ -65,6 +58,7 @@ router.get('/:id/top', isLoggedIn, function(req, res) {
   });
 });
 
+// GET user's top tv page
 router.get('/:id/tv', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
     'FROM favos_users ' +
@@ -77,6 +71,7 @@ router.get('/:id/tv', isLoggedIn, function(req, res) {
   });
 });
 
+// GET user's profile page
 router.get('/:id/profile', isLoggedIn, function(req, res) {
   db.user.find({
     where: {id: req.user.id}
@@ -84,5 +79,48 @@ router.get('/:id/profile', isLoggedIn, function(req, res) {
     res.render('users/show', {user: user});
   });
 });
+
+// GET update user info page
+router.get('/:id/update', isLoggedIn, function(req, res) {
+  db.user.find({
+    where: {id: req.user.id}
+  }).then(function(user) {
+    res.render('users/update', {user: user});
+  });
+});
+
+// PUT update user info
+router.put('/:id/update', function(req, res) {
+  db.user.update({
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
+    email: req.body.email
+  }, {
+    where: {id: req.user.id}
+  }).then(function(user) {
+    res.send('success');
+  });
+});
+
+// DELETE delete's a favo from user's top lists
+router.delete('/:id/favos/:favoId', function(req, res) {
+  db.favos_users.destroy({
+    where: {
+      userId: req.user.id,
+      favoId: req.params.favoId
+    }
+  }).then(function(favoUser) {
+      res.send('success');
+  });
+});
+
+
+
+
+
+
+
+
+
 
 module.exports = router;

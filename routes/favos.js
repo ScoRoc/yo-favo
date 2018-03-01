@@ -62,6 +62,7 @@ router.get('/:name', function(req, res) {
   });
 });
 
+// POST adds favo to favo table
 router.post('/', function(req, res) {
   db.favo.findOrCreate({
     where: {
@@ -85,6 +86,7 @@ router.post('/', function(req, res) {
   });
 });
 
+// PUT updates order of favos on users top lists
 router.put('/order', function(req, res) {
   db.favos_users.update({
     order: req.body.order,
@@ -100,28 +102,5 @@ router.put('/order', function(req, res) {
     res.send('success');
   })
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 module.exports = router;

@@ -1,4 +1,5 @@
 
+// makes the nav bar do the mobile thing
 $('.button-collapse').sideNav({
     menuWidth: 300, // Default is 300
     edge: 'right', // Choose the horizontal origin
@@ -9,8 +10,10 @@ $('.button-collapse').sideNav({
   }
 );
 
+// makes the nav bar do the dropdown thing
 $(".dropdown-button").dropdown();
 
+// updates a user's favo order
 var updateOrder = function(event, ui) {
     var stringArray = $('#sortable').sortable('toArray');
     var numberArray = stringArray.map(function(str) {
@@ -29,6 +32,24 @@ var updateOrder = function(event, ui) {
     });
 };
 
+// updates user info
+$('#update-user-form').on('submit', function(e) {
+  e.preventDefault();
+  $.ajax({
+    url: $(this).attr('action'),
+    method: 'put',
+    data: {
+      first_name: $('#authFirstName').val(),
+      last_name: $('#authLastName').val(),
+      email: $('#authEmail').val(),
+      success: function() {
+        window.location.href = '/users/' + userId + '/profile';
+      }
+    }
+  });
+});
+
+// deletes a favo from user's top lists
 $('.delete-link').on('click', function(e) {
   e.preventDefault();
   var parent = $(this).parent();
@@ -43,6 +64,7 @@ $('.delete-link').on('click', function(e) {
   });
 });
 
+// makes the favos sortable(draggable)
 $(function() {
   $('#sortable').sortable({
     update: updateOrder
