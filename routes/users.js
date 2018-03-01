@@ -9,11 +9,13 @@ router.get('/', function(req, res) {
 });
 
 router.get('/:id/games', function(req, res) {
-  db.user.find({
-    where: {id: req.user.id},
-    include: [db.favo]
-  }).then(function(user) {
-    res.render('users/games', {user: user});
+  db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
+    'FROM favos_users ' +
+    'JOIN favos ON favos.id = favos_users."favoId" ' +
+    'WHERE favos_users."userId" = ' + req.user.id +
+    'ORDER BY favos_users.order', { type: db.sequelize.QueryTypes.SELECT})
+  .then(function(favos) {
+    res.render('users/games', {favos: favos});
   });
 });
 
@@ -24,7 +26,6 @@ router.get('/:id/movies', function(req, res) {
     'WHERE favos_users."userId" = ' + req.user.id +
     'ORDER BY favos_users.order', { type: db.sequelize.QueryTypes.SELECT})
   .then(function(favos) {
-    console.log(favos);
     res.render('users/movies', {favos: favos});
   });
 });
@@ -36,7 +37,6 @@ router.get('/:id/music', isLoggedIn, function(req, res) {
     'WHERE favos_users."userId" = ' + req.user.id +
     'ORDER BY favos_users.order', { type: db.sequelize.QueryTypes.SELECT})
   .then(function(favos) {
-    console.log(favos);
     res.render('users/music', {favos: favos});
   });
 });
@@ -50,12 +50,15 @@ router.get('/:id/top', function(req, res) {
   });
 });
 
-router.get('/:id/tv', function(req, res) {
-  db.user.find({
-    where: {id: req.user.id},
-    include: [db.favo]
-  }).then(function(user) {
-    res.render('users/tv', {user: user});
+router.get('/:id/tv', isLoggedIn, function(req, res) {
+  db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
+    'FROM favos_users ' +
+    'JOIN favos ON favos.id = favos_users."favoId" ' +
+    'WHERE favos_users."userId" = ' + req.user.id +
+    'ORDER BY favos_users.order', { type: db.sequelize.QueryTypes.SELECT})
+  .then(function(favos) {
+    console.log(favos);
+    res.render('users/tv', {favos: favos});
   });
 });
 

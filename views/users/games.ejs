@@ -1,6 +1,6 @@
 <% include ../partials/header-top %>
 
-<title>yo! favo | <%= user.first_name %>'s profile page</title>
+<title>yo! favo | <%= currentUser.first_name %>'s profile page</title>
 
 <% include ../partials/header-bottom %>
 
@@ -23,11 +23,9 @@ games.ejs
     <div class="row">
       <div class="col s8 offset-s2">
         <ul id="sortable">
-          <% user.favos.forEach(function(favo) { %>
+          <% favos.forEach(function(favo) { %>
             <% if (favo.type === 'game') { %>
-
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%= favo.name %></li>
-
+            <li id="<%= favo.id %>" class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%= favo.name %></li>
             <% }; %>
           <% }); %>
         </ul>
