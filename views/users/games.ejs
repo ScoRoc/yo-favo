@@ -25,7 +25,11 @@ games.ejs
         <ul id="sortable">
           <% favos.forEach(function(favo) { %>
             <% if (favo.type === 'game') { %>
-            <li id="<%= favo.id %>" class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%= favo.name %></li>
+              <li id="<%= favo.id %>" class="ui-state-default">
+                <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                <%= favo.name %>
+                <a href="/users/<%= currentUser.id %>/delete"><i class="right material-icons">close</i></a>
+              </li>
             <% }; %>
           <% }); %>
         </ul>

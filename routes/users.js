@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
   res.send('list of all users');
 });
 
-router.get('/:id/games', function(req, res) {
+router.get('/:id/games', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
     'FROM favos_users ' +
     'JOIN favos ON favos.id = favos_users."favoId" ' +
@@ -19,7 +19,7 @@ router.get('/:id/games', function(req, res) {
   });
 });
 
-router.get('/:id/movies', function(req, res) {
+router.get('/:id/movies', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
     'FROM favos_users ' +
     'JOIN favos ON favos.id = favos_users."favoId" ' +
@@ -41,7 +41,7 @@ router.get('/:id/music', isLoggedIn, function(req, res) {
   });
 });
 
-router.get('/:id/top', function(req, res) {
+router.get('/:id/top', isLoggedIn, function(req, res) {
   db.user.find({
     where: {id: req.user.id},
     include: [db.favo]
