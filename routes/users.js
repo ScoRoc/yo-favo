@@ -18,20 +18,26 @@ router.get('/:id/games', function(req, res) {
 });
 
 router.get('/:id/movies', function(req, res) {
-  db.user.find({
-    where: {id: req.user.id},
-    include: [db.favo]
-  }).then(function(user) {
-    res.render('users/movies', {user: user});
+  db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
+    'FROM favos_users ' +
+    'JOIN favos ON favos.id = favos_users."favoId" ' +
+    'WHERE favos_users."userId" = ' + req.user.id +
+    'ORDER BY favos_users.order', { type: db.sequelize.QueryTypes.SELECT})
+  .then(function(favos) {
+    console.log(favos);
+    res.render('users/movies', {favos: favos});
   });
 });
 
-router.get('/:id/music', function(req, res) {
-  db.user.find({
-    where: {id: req.user.id},
-    include: [db.favo]
-  }).then(function(user) {
-    res.render('users/music', {user: user});
+router.get('/:id/music', isLoggedIn, function(req, res) {
+  db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos."wTeaser", favos."wUrl", favos."yUrl", favos_users.order ' +
+    'FROM favos_users ' +
+    'JOIN favos ON favos.id = favos_users."favoId" ' +
+    'WHERE favos_users."userId" = ' + req.user.id +
+    'ORDER BY favos_users.order', { type: db.sequelize.QueryTypes.SELECT})
+  .then(function(favos) {
+    console.log(favos);
+    res.render('users/music', {favos: favos});
   });
 });
 

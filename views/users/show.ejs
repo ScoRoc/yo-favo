@@ -16,27 +16,27 @@
   <div class="col s12 l6">
     <div class="row">
       <div class="col s8 offset-s2">
-        <a href="/users/:id/music">yo! music</a>
+        <a href="/users/<%= currentUser.id %>/music">yo! music</a>
       </div>
     </div>
     <div class="row">
       <div class="col s8 offset-s2">
-        <a href="/users/:id/movies">yo! movies</a>
+        <a href="/users/<%= currentUser.id %>/movies">yo! movies</a>
       </div>
     </div>
     <div class="row">
       <div class="col s8 offset-s2">
-        <a href="/users/:id/tv">yo! tv</a>
+        <a href="/users/<%= currentUser.id %>/tv">yo! tv</a>
       </div>
     </div>
     <div class="row">
       <div class="col s8 offset-s2">
-        <a href="/users/:id/games">yo! games</a>
+        <a href="/users/:<%= currentUser.id %>games">yo! games</a>
       </div>
     </div>
     <div class="row">
       <div class="col s8 offset-s2">
-        <a href="/users/:id/top">yo! top list</a>
+        <a href="/users/<%= currentUser.id %>/top">yo! top list</a>
       </div>
     </div>
   </div>

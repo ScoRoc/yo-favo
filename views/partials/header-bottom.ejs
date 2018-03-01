@@ -22,7 +22,9 @@
   <a href="/auth/signup">Signup page</a>
   <span> | </span>
   <!-- fix this link -->
-  <a href="/users/:id/profile">Users profile page</a>
+  <% if(currentUser) { %>
+    <a href="/users/<%= currentUser.id %>/profile">Users profile page</a>
+  <% }; %>
   <span> | </span>
   <a href="/auth/logout">Logout</a>
 </div>

@@ -90,7 +90,21 @@ router.post('/', function(req, res) {
 
 
 
-
+router.put('/order', function(req, res) {
+  db.favos_users.update({
+    order: req.body.order,
+    userId: req.user.id,
+    favoId: req.body.favoId
+  }, {
+    where: {
+      userId: req.user.id,
+      favoId: req.body.favoId,
+    }
+  }).then(function(data) {
+    console.log(data);
+    res.send('success');
+  })
+});
 
 
 
