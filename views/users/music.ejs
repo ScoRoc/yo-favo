@@ -25,9 +25,7 @@ music.ejs
         <ul id="sortable">
           <% user.favos.forEach(function(favo) { %>
             <% if (favo.type === 'music') { %>
-
-            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%= favo.name %></li>
-
+            <li data-fav-id="<%= favo.id %>" class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%= favo.name %></li>
             <% }; %>
           <% }); %>
         </ul>
