@@ -41,8 +41,8 @@ var mobileNavAway = function() {
 
 // calls the mobile nav displays/aways with click and touch
 $('#mobile-search-trigger').on('touchend click', mobileNavDisplay);
-// $('#mobile-search-trigger').on('touchend', mobileNavDisplay);
 $('.darken-body').on('touchend click', mobileNavAway);
+// $('#mobile-search-trigger').on('touchend', mobileNavDisplay);
 // $('.darken-body').on('touchend', mobileNavAway);
 
 // updates a user's favo order

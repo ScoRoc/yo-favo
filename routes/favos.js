@@ -7,9 +7,6 @@ var request = require('request');
 //   res.send('list of all favos');
 // });
 
-
-///////// TESTING API BELOW \\// \\// \\// \\//
-
 router.get('/', function(req, res) {
   var tDurl = 'https://tastedive.com/api/similar';
   var taste_data = {
@@ -28,10 +25,6 @@ router.get('/', function(req, res) {
     }
   });
 });
-
-////////// TESTING API ABOVE //\\  //\\  //\\  //\\
-
-
 
 ////// WORKING!!!!!!
 // but maybe add recomendation???

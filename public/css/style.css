@@ -3,6 +3,11 @@ body {
   z-index: 10;
 }
 
+footer p {
+  display: inline-block;
+  color: #06b;
+}
+
 .darken-body {
   position: fixed;
   top: 0;
@@ -36,30 +41,12 @@ body {
   }
 }
 
-footer p {
-  display: inline-block;
-  color: #06b;
-}
-
 .h1-landing {
   background: #bbb;
 }
 
-.my-nav {
-  position: fixed;
-  top: 0px;
-}
-
 #nav-search {
-  width: 27vw;
-}
-
-#mobile-nav-search {
-  width: 50vw;
-}
-
-.nav-search-icon {
-  cursor: pointer;
+  width: 35vw;
 }
 
 #mobile-search-trigger {
@@ -102,22 +89,6 @@ footer p {
   100% {
     transform: translate(0, -30vw) scale(0);
   }
-}
-
-.foobar {
-  color: red;
-  font-size: 30px;
-}
-
-.nav-test {
-  font-size: 20px;
-  position: fixed;
-  top: 5%;
-  right: 5%;
-}
-
-.nav-test a {
-  color: orange;
 }
 
 .test-img-col {

@@ -114,13 +114,4 @@ router.delete('/:id/favos/:favoId', function(req, res) {
   });
 });
 
-
-
-
-
-
-
-
-
-
 module.exports = router;
