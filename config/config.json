@@ -10,8 +10,6 @@
     "dialect": "postgres"
   },
   "production": {
-    "database": "yo_favo_production",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "user_env_variable": "DATABSE_URL"
   }
 }

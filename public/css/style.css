@@ -182,6 +182,22 @@ footer p {
   bottom: -10%;
 }
 
+.top-music-mobile {
+  background-color: blue;
+}
+
+.top-movie-mobile {
+  background-color: red;
+}
+
+.top-show-mobile {
+  background-color: green;
+}
+
+.top-game-mobile {
+  background-color: brown;
+}
+
 .animate-linkedin {
   transition: all .5s;
   animation: fab-grow 2.1s infinite ease-in-out;

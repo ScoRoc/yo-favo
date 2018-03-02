@@ -86,7 +86,18 @@ top.ejs
                 <div class="top-favo-mobile top-<%= favo.type %>">
                   <div class="row">
                     <div class="col s12">
-                      <h4><a class="top-favo-mobile-name" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
+                      <% if (favo.type === 'music') { %>
+                      <h4><a class="top-favo-mobile-name top-<%= favo.type %>-mobile" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
+                      <% }; %>
+                      <% if (favo.type === 'movie') { %>
+                      <h4><a class="top-favo-mobile-name top-<%= favo.type %>-mobile" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
+                      <% }; %>
+                      <% if (favo.type === 'show') { %>
+                      <h4><a class="top-favo-mobile-name top-<%= favo.type %>-mobile" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
+                      <% }; %>
+                      <% if (favo.type === 'game') { %>
+                      <h4><a class="top-favo-mobile-name top-<%= favo.type %>-mobile" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
+                      <% }; %>
                     </div>
                   </div>
                   <div class="row">
