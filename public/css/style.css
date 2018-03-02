@@ -1,5 +1,39 @@
 body {
   color: #3af;
+  z-index: 10;
+}
+
+.darken-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: none;
+  background-color: black;
+  opacity: 0;
+}
+
+.dark-body-animate {
+  animation: darken-body-animation .5s forwards;
+}
+
+@keyframes darken-body-animation {
+  100% {
+    opacity: .4;
+  }
+}
+
+.light-body-animate {
+  opacity: .4;
+  animation: lighten-body .5s forwards;
+}
+
+@keyframes lighten-body {
+  100% {
+    opacity: 0;
+  }
 }
 
 footer p {
@@ -28,13 +62,46 @@ footer p {
   cursor: pointer;
 }
 
+#mobile-search-trigger {
+  cursor: pointer;
+}
+
 #mobile-search-drop {
+  display: none;
   color: black;
-  background: green;
+  background: #cfd;
   width: 50vw;
   position: absolute;
-  /* left: 30vw; */
-  left: -60vw;
+  left: 25vw;
+  z-index: 50;
+  box-shadow: 0 1vw 5vw rgba(0,0,0,.8);
+  transform: scale(0);
+}
+
+.mobile-search-display {
+  transform: scale(0) !important;
+  animation: mobile-search-appear .5s forwards !important;
+}
+
+@keyframes mobile-search-appear {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.mobile-search-away {
+  z-index: -10;
+  transform: scale(1) !important;
+  animation: mobile-search-disappear .5s forwards !important;
+}
+
+@keyframes mobile-search-disappear {
+  35% {
+    transform: translate(0,0) scale(.65);
+  }
+  100% {
+    transform: translate(0, -30vw) scale(0);
+  }
 }
 
 .foobar {

@@ -66,24 +66,26 @@
   </nav>
 </div>
 
+<div class="darken-body"></div>
+
 
 <nav class="hide-on-large-only">
   <div class="nav-wrapper">
     <a href="#" data-activates="nav-mobile" class="right button-collapse"><i class="material-icons">menu</i></a>
     <div class="row">
       <div class="col m7 offset-m3">
-        <ul class="right">
-          <li>
+        <ul class="center">
+          <!-- <li>
            <div id="mobile-nav-search" class="input-field">
-             <form class="hide-on-small-only" action="/favos/:name" method="get">
+             <form class="hide-on-med-only" action="/favos/:name" method="get">
                <i class="material-icons prefix">search</i>
                <input type="text" name="search_name" placeholder="search music, movies, tv shows, games...">
              </form>
            </div>
          </li>
-        </ul>
-        <a class="hide-on-med-only center-align"><i class="material-icons prefix">search</i></a>
-        <div class="right hide-on-med-only" id="mobile-search-drop">
+        </ul> -->
+        <a class="center-align" id="mobile-search-trigger"><i class="material-icons prefix">search</i></a>
+        <div class="right" id="mobile-search-drop">
          <form action="/favos/:name" method="get">
            <input type="text" name="search_name">
          </form>

@@ -29,7 +29,7 @@ top.ejs
         <h4>yo! top list</h4>
       </div>
       <div class="row">
-        <div class="col s8 offset-s2">
+        <div class="col s10 offset-s2">
           <% topFavos[0].forEach(function(favo) { %>
             <li>
               <a href="/favos/<%= favo.name %>"><%= favo.name %></a>: <%= favo.type %>

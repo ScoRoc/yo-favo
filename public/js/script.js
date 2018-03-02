@@ -11,7 +11,39 @@ $('.button-collapse').sideNav({
 );
 
 // makes the nav bar do the dropdown thing
-$(".dropdown-button").dropdown();
+$('.dropdown-button').dropdown();
+
+// makes my own mobile nav bar do the dropdown thing
+var mobileNavDisplay = function() {
+  var msd = $('#mobile-search-drop');
+  var darkenBody = $('.darken-body');
+  msd.css('display', 'block');
+  darkenBody.css('display', 'block');
+  darkenBody.removeClass('light-body-animate');
+  darkenBody.addClass('dark-body-animate');
+  msd.removeClass('mobile-search-away');
+  msd.addClass('mobile-search-display');
+};
+
+// closes my mobile nav search on touch outside of search
+var mobileNavAway = function() {
+  var msd = $('#mobile-search-drop');
+  var darkenBody = $('.darken-body');
+  darkenBody.removeClass('dark-body-animate');
+  darkenBody.addClass('light-body-animate');
+  msd.removeClass('mobile-search-display');
+  msd.addClass('mobile-search-away');
+  setTimeout(function() {
+    darkenBody.css('display', 'none');
+    msd.css('display', 'none');
+  }, 500);
+};
+
+// calls the mobile nav displays/aways with click and touch
+$('#mobile-search-trigger').on('touchend click', mobileNavDisplay);
+// $('#mobile-search-trigger').on('touchend', mobileNavDisplay);
+$('.darken-body').on('touchend click', mobileNavAway);
+// $('.darken-body').on('touchend', mobileNavAway);
 
 // updates a user's favo order
 var updateOrder = function(event, ui) {
