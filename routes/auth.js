@@ -18,7 +18,6 @@ router.post('/signup', function(req, res) {
   }).spread(function(user, created) {
     if (created) {  // user was created bc email wasn't found in db
     // user was created
-      console.log('User created');
       passport.authenticate('local', {
         successRedirect: '/',
         successFlash: 'Account created and logged in'
@@ -50,7 +49,6 @@ router.post('/login', passport.authenticate('local', {
 
 router.get('/logout', function(req, res) {
   req.logout();
-  console.log('logged out');
   req.flash('success', 'You have logged out!');
   res.redirect('/');
 });

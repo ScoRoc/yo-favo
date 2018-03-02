@@ -24,7 +24,6 @@ router.get('/', function(req, res) {
   }, function(error, response, body) {
     if (!error && response.statusCode === 200) {
       var dataObj = JSON.parse(body);
-      // res.send({results: dataObj});
       res.render('favos/index', {results: dataObj});
     }
   });
@@ -56,7 +55,6 @@ router.get('/:name', function(req, res) {
   }, function(error, response, body) {
     if (!error && response.statusCode === 200) {
       var dataObj = JSON.parse(body);
-      // res.send({results: dataObj});
       res.render('favos/show', {results: dataObj});
     }
   });
@@ -80,7 +78,8 @@ router.post('/', function(req, res) {
       where: {id: req.user.id}
     }).then(function(user, created) {
       user.addFavos(favos).then(function(favos) {
-          res.redirect('back');
+        req.flash('success', 'Added favo!')
+        res.redirect('back');
       });
     });
   });
@@ -98,7 +97,6 @@ router.put('/order', function(req, res) {
       favoId: req.body.favoId,
     }
   }).then(function(data) {
-    console.log(data);
     res.send('success');
   })
 });

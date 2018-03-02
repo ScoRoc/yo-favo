@@ -20,6 +20,23 @@ footer p {
   width: 27vw;
 }
 
+#mobile-nav-search {
+  width: 50vw;
+}
+
+.nav-search-icon {
+  cursor: pointer;
+}
+
+#mobile-search-drop {
+  color: black;
+  background: green;
+  width: 50vw;
+  position: absolute;
+  /* left: 30vw; */
+  left: -60vw;
+}
+
 .foobar {
   color: red;
   font-size: 30px;
