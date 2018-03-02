@@ -9,6 +9,16 @@
 </head>
 <body>
 
+  <% if (currentUser) { %>
+  <ul id="profile-dropdown" class="dropdown-content">
+      <!-- <li><a href="/users/<%= currentUser.id %>/top"><i class="prefix vertical-align material-icons">format_list_numbered</i>top list</a></li> -->
+      <li><a href="/users/<%= currentUser.id %>/music"><i class="prefix vertical-align material-icons">music_note</i>music</a></li>
+      <li><a href="/users/<%= currentUser.id %>/movies"><i class="material-icons">local_movies</i>movies</a></li>
+      <li><a href="/users/<%= currentUser.id %>/tv"><i class="material-icons">live_tv</i>tv</a></li>
+      <li><a href="/users/<%= currentUser.id %>/games"><i class="material-icons">videogame_asset</i>games</a></li>
+  </ul>
+  <% }; %>
+
 <ul id="nav-dropdown" class="dropdown-content">
   <% if(currentUser) { %>
     <li><a href="/">Home page</a></li>
@@ -28,19 +38,22 @@
       <ul class="right">
         <li>
           <div class="center row">
-             <div class="col s12 pull-s4">
-               <div class="row" id="topbarsearch">
-                 <div id="nav-search" class="input-field col s6 s12">
-                   <form action="/favos/:name" method="get">
-                     <i class="material-icons prefix">search</i>
-                     <input type="text" name="search_name" placeholder="search music, movies, tv shows, games...">
-                   </form>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </li>
-        <li><a class="dropdown-button" href="#!" data-hover="true" data-beloworigin="true" data-activates="nav-dropdown">yo! NAME NAME NAME<i class="material-icons right">arrow_drop_down</i></a></li>
+            <div class="col s12 pull-s4">
+              <div class="row" id="topbarsearch">
+                <div id="nav-search" class="input-field col s6 s12">
+                  <form action="/favos/:name" method="get">
+                    <i class="material-icons prefix">search</i>
+                    <input type="text" name="search_name" placeholder="search music, movies, tv shows, games...">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <% if (currentUser) { %>
+          <li><a class="dropdown-button" href="#!" data-hover="true" data-beloworigin="true" data-activates="profile-dropdown">yo! <%= currentUser.first_name %><i class="material-icons right">arrow_drop_down</i></a></li>
+        <% }; %>
+        <li><a class="dropdown-button" href="#!" data-hover="true" data-beloworigin="true" data-activates="nav-dropdown">menu<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
     </div>
   </nav>
@@ -72,7 +85,7 @@
         <li><a href="/">Home page</a></li>
         <li><a href="/auth/login">Login page</a></li>
         <li><a href="/auth/signup">Signup page</a></li>
-      <% } %>
+      <% }; %>
     </ul>
   </div>
 </nav>

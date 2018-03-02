@@ -3,6 +3,13 @@ body {
   z-index: 10;
 }
 
+footer {
+  background: lightblue;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
 footer p {
   display: inline-block;
   color: #06b;
@@ -104,6 +111,68 @@ footer p {
   margin: 0;
   padding: 0;
   width: 80%;
+}
+
+.top-favo-box-row {
+  margin: 2vw 0;
+  padding: 0;
+}
+
+.top-favo-desktop {
+  min-height: 7vw;
+  width: 20vw;
+  margin: 0;
+  padding: 0;
+  background: papayawhip;
+}
+
+/* ~~~~~~~~~~FIX THIS FIX THIS~~~~~~~~~~~~ */
+/* ~~~~~~~~~~FIX THIS FIX THIS~~~~~~~~~~~~ */
+.row {
+  background: #bbb;
+}
+
+.col {
+  background: #eee;
+}
+/* ~~~~~~~~~~FIX THIS FIX THIS~~~~~~~~~~~~ */
+/* ~~~~~~~~~~FIX THIS FIX THIS~~~~~~~~~~~~ */
+
+
+.top-favo-desktop-name {
+  font-size: 1.1em !important;
+}
+
+.top-music {
+  background-color: blue;
+}
+
+.top-movie {
+  background-color: red;
+}
+
+.top-show {
+  background-color: green;
+}
+
+.top-game {
+  background-color: brown;
+}
+
+.top-favo-mobile {
+  position: relative;
+  min-height: 15vw;
+  background: papayawhip;
+}
+
+.top-favo-mobile-name {
+  position: relative;
+  top: 3vw;
+}
+
+.top-favo-mobile-type {
+  position: relative;
+  bottom: -10%;
 }
 
 #sortable li {

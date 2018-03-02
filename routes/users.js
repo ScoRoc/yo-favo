@@ -44,8 +44,10 @@ router.get('/:id/music', isLoggedIn, function(req, res) {
   });
 });
 
+//~~~~~~~~~~~~~~~MIGHT MAKE THIS A SPROFILE PAGE~~~~~~~~~~~
+//                           \\//
 // GET user's top list page
-router.get('/:id/top', isLoggedIn, function(req, res) {
+router.get('/:id/profile', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos_users.order ' +
   'FROM favos_users ' +
   'JOIN favos ON favos.id = favos_users."favoId" ' +
@@ -71,14 +73,16 @@ router.get('/:id/tv', isLoggedIn, function(req, res) {
   });
 });
 
+//~~~~~~~~~~~MIGHT NOT USE~~~~~~~~~~~
+//               \\//
 // GET user's profile page
-router.get('/:id/profile', isLoggedIn, function(req, res) {
-  db.user.find({
-    where: {id: req.user.id}
-  }).then(function(user) {
-    res.render('users/show', {user: user});
-  });
-});
+// router.get('/:id/profile', isLoggedIn, function(req, res) {
+//   db.user.find({
+//     where: {id: req.user.id}
+//   }).then(function(user) {
+//     res.render('users/show', {user: user});
+//   });
+// });
 
 // GET update user info page
 router.get('/:id/update', isLoggedIn, function(req, res) {

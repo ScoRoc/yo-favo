@@ -11,7 +11,7 @@
 top.ejs
 
 <div class="row">
-  <div class="col s12 l5 offset-l1 test-img-col">
+  <div class="col s12 l3 offset-l1 test-img-col">
     <div class="row">
       <div class="col s12">
         <p>img goes here</p>
@@ -23,23 +23,82 @@ top.ejs
       </div>
     </div>
   </div>
-  <div class="col s12 l6">
+  <div class="col s12 l8">
     <div class="row">
-      <div class="col s8 offset-s2">
+      <div class="col s12 center-align">
         <h4>yo! top list</h4>
       </div>
       <div class="row">
-        <div class="col s10 offset-s2">
+        <div class="col s12">
+          <!-- DESKTOP FAVOS -->
+          <div class="row hide-on-med-only">
+            <div class="col l12 top-favo-box">
+              <div class="row top-favo-box-row">
+                <div class="col l6 center-align top-favo-box">
+                  <% topFavos[0].forEach(function(favo) { %>
+                    <% if (favo.type === 'music') { %>
+                      <div class="top-favo-desktop top-<%= favo.type %>">
+                      <h5 class="top-favo-desktop-name><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
+                      <p><%= favo.type %></p>
+                      </div>
+                    <% }; %>
+                  <% }); %>
+                </div>
+                <div class="col l6 center-align top-favo-box">
+                  <% topFavos[0].forEach(function(favo) { %>
+                    <% if (favo.type === 'movie') { %>
+                      <div class="top-favo-desktop top-<%= favo.type %>">
+                      <h5 class="top-favo-desktop-name><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
+                      <p><%= favo.type %></p>
+                      </div>
+                    <% }; %>
+                  <% }); %>
+                </div>
+              </div>
+              <div class="row top-favo-box-row">
+                <div class="col l6 center-align top-favo-box">
+                  <% topFavos[0].forEach(function(favo) { %>
+                    <% if (favo.type === 'show') { %>
+                      <div class="top-favo-desktop top-<%= favo.type %>">
+                      <h5 class="top-favo-desktop-name><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
+                      <p><%= favo.type %></p>
+                      </div>
+                    <% }; %>
+                  <% }); %>
+                </div>
+                <div class="col l6 center-align top-favo-box">
+                  <% topFavos[0].forEach(function(favo) { %>
+                    <% if (favo.type === 'game') { %>
+                      <div class="top-favo-desktop top-<%= favo.type %>">
+                      <h5 class="top-favo-desktop-name><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
+                      <p><%= favo.type %></p>
+                      </div>
+                    <% }; %>
+                  <% }); %>
+                </div>
+              </div>
+            </div>
+          </div>
           <% topFavos[0].forEach(function(favo) { %>
-            <li>
-              <a href="/favos/<%= favo.name %>"><%= favo.name %></a>: <%= favo.type %>
-            </li>
+            <!-- MOBILE FAVOS -->
+            <div class="row hide-on-large-only">
+              <div class="col s12 center-align">
+                <div class="top-favo-mobile top-<%= favo.type %>">
+                  <div class="row">
+                    <div class="col s12">
+                      <h4><a class="top-favo-mobile-name" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12">
+                      <p class="top-favo-mobile-type"><%= favo.type %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           <% }); %>
         </div>
-      </div>
-    <div class="row">
-      <div class="col s8 offset-s2">
-        <a href="/users/<%= currentUser.id %>/profile">...Profile...</a>
       </div>
     </div>
   </div>
