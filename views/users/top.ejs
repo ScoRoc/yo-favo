@@ -38,7 +38,7 @@ top.ejs
                   <% topFavos[0].forEach(function(favo) { %>
                     <% if (favo.type === 'music') { %>
                       <div class="top-favo-desktop top-<%= favo.type %>">
-                        <h5 class="top-favo-desktop-name><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
+                        <h5 class="top-favo-desktop-name"><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
                         <p><%= favo.type %></p>
                       </div>
                     <% }; %>
@@ -48,7 +48,7 @@ top.ejs
                   <% topFavos[0].forEach(function(favo) { %>
                     <% if (favo.type === 'movie') { %>
                       <div class="top-favo-desktop top-<%= favo.type %>">
-                        <h5 class="top-favo-desktop-name><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
+                        <h5 class="top-favo-desktop-name"><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
                         <p><%= favo.type %></p>
                       </div>
                     <% }; %>
@@ -60,7 +60,7 @@ top.ejs
                   <% topFavos[0].forEach(function(favo) { %>
                     <% if (favo.type === 'show') { %>
                       <div class="top-favo-desktop top-<%= favo.type %>">
-                        <h5 class="top-favo-desktop-name><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
+                        <h5 class="top-favo-desktop-name"><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
                         <p><%= favo.type %></p>
                       </div>
                     <% }; %>
@@ -70,7 +70,7 @@ top.ejs
                   <% topFavos[0].forEach(function(favo) { %>
                     <% if (favo.type === 'game') { %>
                       <div class="top-favo-desktop top-<%= favo.type %>">
-                        <h5 class="top-favo-desktop-name><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
+                        <h5 class="top-favo-desktop-name"><a href="/favos/<%= favo.name %>"><%= favo.name %></a></h5>
                         <p><%= favo.type %></p>
                       </div>
                     <% }; %>
@@ -83,21 +83,10 @@ top.ejs
             <!-- MOBILE FAVOS -->
             <div class="row hide-on-large-only">
               <div class="col s12 center-align">
-                <div class="top-favo-mobile top-<%= favo.type %>">
+                <div class="top-favo-mobile top-<%= favo.type %>-mobile">
                   <div class="row">
                     <div class="col s12">
-                      <% if (favo.type === 'music') { %>
-                      <h4><a class="top-favo-mobile-name top-<%= favo.type %>-mobile" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
-                      <% }; %>
-                      <% if (favo.type === 'movie') { %>
-                      <h4><a class="top-favo-mobile-name top-<%= favo.type %>-mobile" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
-                      <% }; %>
-                      <% if (favo.type === 'show') { %>
-                      <h4><a class="top-favo-mobile-name top-<%= favo.type %>-mobile" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
-                      <% }; %>
-                      <% if (favo.type === 'game') { %>
-                      <h4><a class="top-favo-mobile-name top-<%= favo.type %>-mobile" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
-                      <% }; %>
+                      <h4><a class="top-favo-mobile-name" href="/favos/<%= favo.name %>"><%= favo.name %></a></h4>
                     </div>
                   </div>
                   <div class="row">

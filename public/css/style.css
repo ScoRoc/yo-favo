@@ -150,22 +150,6 @@ footer p {
   top: 1vw;
 }
 
-.top-music {
-  background-color: blue;
-}
-
-.top-movie {
-  background-color: red;
-}
-
-.top-show {
-  background-color: green;
-}
-
-.top-game {
-  background-color: brown;
-}
-
 .top-favo-mobile {
   position: relative;
   min-height: 15vw;
