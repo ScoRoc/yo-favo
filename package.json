@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/ScoRoc/yo-favo#readme",
   "dependencies": {
-    "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "connect-flash": "^0.1.1",
     "dotenv": "^5.0.0",
