@@ -1,10 +1,25 @@
 body {
-  color: #3af;
+  background-color: #38B683;
+  color: #1E5157;
   z-index: 10;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+li {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 footer {
-  background: lightblue;
+  background: #1E5157;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -13,7 +28,66 @@ footer {
 footer p {
   display: inline-block;
   color: #06b;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
 }
+
+/* || Navbar styling || */
+/* \\//  \\//  \\//  \\// */
+nav {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 80px;
+    line-height: 43px;
+}
+
+nav .button-collapse i {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav .brand-logo {
+    font-size: 2.6rem;
+}
+
+.navbar-fixed {
+  margin-bottom: 10vh;
+}
+
+.mobile-nav-wrapper {
+  margin-bottom: 5vh;
+}
+
+.nav-wrapper {
+  background-color: #F06752;
+  color: #58EDAB;
+}
+
+.nav-search-input {
+  font-family: 'Roboto', sans-serif;
+  color: #F4FFF7;
+}
+
+i.navbar-icons {
+  color: #F4FFF7;
+  ;
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 80px;
+        line-height: 80px;
+    }
+}
+
+.dropdown-button {
+  font-size: 1.4rem;
+}
+/* //\\  //\\  //\\  //\\ */
 
 .darken-body {
   position: fixed;
@@ -48,9 +122,33 @@ footer p {
   }
 }
 
-.h1-landing {
-  background: #bbb;
+/* || Landing page logo || */
+/* \\//  \\//  \\//  \\// */
+.h1-landing-wrapper {
+  height: 20vw;
+  width: 50vw;
+  position: relative;
+  top: 3vh;
+  /* background: #3E4D5A; */
 }
+
+.behind-h1-landing {
+  height: 110%;
+  width: 120%;
+  position: absolute;
+  left: -15%;
+  top: -5%;
+  background: #3E4D5A;
+  filter: blur(2em);
+}
+
+.h1-landing {
+  position: absolute;
+  color: #E93095;
+  font-size: 600%;
+  /* box-shadow: 0 5em 10em #3E4D5A; */
+}
+/* //\\  //\\  //\\  //\\ */
 
 #nav-search {
   width: 35vw;
@@ -131,19 +229,6 @@ footer p {
   padding-top: .1vw;
   background: papayawhip;
 }
-
-/* ~~~~~~~~~~FIX THIS FIX THIS~~~~~~~~~~~~ */
-/* ~~~~~~~~~~FIX THIS FIX THIS~~~~~~~~~~~~ */
-.row {
-  background: #bbb;
-}
-
-.col {
-  background: #eee;
-}
-/* ~~~~~~~~~~FIX THIS FIX THIS~~~~~~~~~~~~ */
-/* ~~~~~~~~~~FIX THIS FIX THIS~~~~~~~~~~~~ */
-
 
 .top-favo-desktop-name {
   position: relative;
