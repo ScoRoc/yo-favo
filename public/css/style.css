@@ -1,6 +1,7 @@
 body {
   background-color: #38B683;
   color: #1E5157;
+  font-size: 100%;
   z-index: 10;
 }
 
@@ -87,73 +88,12 @@ i.navbar-icons {
 .dropdown-button {
   font-size: 1.4rem;
 }
-/* //\\  //\\  //\\  //\\ */
-
-.darken-body {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 20;
-  display: none;
-  background-color: black;
-  opacity: 0;
-}
-
-.dark-body-animate {
-  animation: darken-body-animation .5s forwards;
-}
-
-@keyframes darken-body-animation {
-  100% {
-    opacity: .4;
-  }
-}
-
-.light-body-animate {
-  opacity: .4;
-  animation: lighten-body .5s forwards;
-}
-
-@keyframes lighten-body {
-  100% {
-    opacity: 0;
-  }
-}
-
-/* || Landing page logo || */
-/* \\//  \\//  \\//  \\// */
-.h1-landing-wrapper {
-  height: 20vw;
-  width: 50vw;
-  position: relative;
-  top: 3vh;
-  /* background: #3E4D5A; */
-}
-
-.behind-h1-landing {
-  height: 110%;
-  width: 120%;
-  position: absolute;
-  left: -15%;
-  top: -5%;
-  background: #3E4D5A;
-  filter: blur(2em);
-}
-
-.h1-landing {
-  position: absolute;
-  color: #E93095;
-  font-size: 600%;
-  /* box-shadow: 0 5em 10em #3E4D5A; */
-}
-/* //\\  //\\  //\\  //\\ */
 
 #nav-search {
   width: 35vw;
 }
 
+/* || Mobile Nav Section Below || */
 #mobile-search-trigger {
   cursor: pointer;
 }
@@ -195,6 +135,184 @@ i.navbar-icons {
     transform: translate(0, -30vw) scale(0);
   }
 }
+
+.darken-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: none;
+  background-color: black;
+  opacity: 0;
+}
+
+.dark-body-animate {
+  animation: darken-body-animation .5s forwards;
+}
+
+@keyframes darken-body-animation {
+  100% {
+    opacity: .4;
+  }
+}
+
+.light-body-animate {
+  opacity: .4;
+  animation: lighten-body .5s forwards;
+}
+
+@keyframes lighten-body {
+  100% {
+    opacity: 0;
+  }
+}
+/* || Navbar styling || */
+/* //\\  //\\  //\\  //\\ */
+
+
+
+/* || Landing page logo || */
+/* \\//  \\//  \\//  \\// */
+.h1-landing-wrapper {
+  height: 20vw;
+  width: 50vw;
+  position: relative;
+  top: 2vw;
+}
+
+.behind-h1-landing {
+  height: 110%;
+  width: 120%;
+  position: absolute;
+  left: -15%;
+  top: -5%;
+  /* background: #3E4D5A; */
+  filter: blur(2em);
+}
+
+.blue-box {
+  height: 60%;
+  width: 26%;
+  position: absolute;
+  background-color: #45E9FF;
+  opacity: .9;
+  border-radius: 50%;
+  animation: circle-switch 9s .4s infinite;
+}
+
+@keyframes circle-switch {
+  25% {
+    transform: translate(16vw, 3vw);
+  }
+  30% {
+    transform: translate(16vw, 3vw);
+  }
+  50% {
+    transform: translate(0,0);
+  }
+}
+
+.top-right-box {
+  height: 40%;
+  width: 50%;
+  position: absolute;
+  top: 12%;
+  left: 20%;
+  background-color: #EFC341;
+  border-radius: 1vw 1vw 35% 35%;
+  animation: top-box-switch 9s .2s infinite;
+}
+
+@keyframes top-box-switch {
+  25% {
+    transform: translate(-16vw, 0);
+  }
+  30% {
+    transform: translate(-16vw, 0);
+  }
+  50% {
+    transform: translate(0,0);
+  }
+}
+
+.bottom-left-box {
+  height: 30%;
+  width: 40%;
+  position: absolute;
+  bottom: 22%;
+  left: -6%;
+  border-radius: 35% 35% 1vw 1vw;
+  background-color: #FF6436;
+  animation: bottom-box-switch 9s infinite;
+}
+
+@keyframes bottom-box-switch {
+  25% {
+    transform: translate(16vw, 0);
+  }
+  30% {
+    transform: translate(16vw, 0);
+  }
+  50% {
+    transform: translate(0,0);
+  }
+}
+
+.h1-landing {
+  position: absolute;
+  color: #E93095;
+  font-size: 9vw;
+  text-shadow: 0 0 .02em white;
+  animation: h1-landing-flip 18s infinite;
+}
+
+@keyframes h1-landing-flip {
+  12.5% {
+    transform: rotate3d(0,0,0,0) scale(1);
+  }
+  17% {
+    transform: rotate3d(1,0,0,360deg) scale(1);
+  }
+  50% {
+    transform: rotate3d(1,0,0,360deg) scale(1);
+  }
+  55% {
+    /* filter: blur(0); */
+    transform: rotate3d(1,0,0,360deg) scale(1);
+    box-shadow: 0 0;
+  }
+  62% {
+    /* filter: blur(.5vw); */
+    transform: rotate3d(1,0,0,360deg) scale(1.3);
+    box-shadow: 0 0 1vw;
+  }
+  80% {
+    /* filter: blur(0); */
+    transform: rotate3d(1,0,0,360deg) scale(1);
+    box-shadow: 0 0;
+  }
+  90% {
+    transform: rotate3d(1,0,0,360deg) scale(1);
+  }
+}
+
+@media (min-width: 992px) {
+  .h1-landing {
+    top: 2vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .h1-landing {
+    top: .7vw;
+  }
+}
+/* || Landing page || */
+/* //\\  //\\  //\\  //\\ */
+
+
 
 .test-img-col {
   background: yellow;
