@@ -20,19 +20,77 @@ p {
 }
 
 footer {
-  background: #1E5157;
+  width: 100%;
+  padding: 4vw;
   position: relative;
   bottom: 0;
-  width: 100%;
+  background: #1E5157;
 }
 
 footer p {
   display: inline-block;
-  color: #06b;
+  color: #D6E5D8;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.2em;
 }
+
+/* || Navbar logo || */
+\\//  \\//  \\//  \\//
+.nav-h1-landing-wrapper {
+  height: 2vw;
+  width: 5vw;
+  position: relative;
+  top: 2vw;
+}
+
+.nav-backing-box {
+  position: absolute;
+  height: 2vw;
+  width: 4vw;
+  background-color: #97EDC4;
+  opacity: .4;
+  z-index: -50;
+}
+
+.nav-blue-box {
+  height: 60%;
+  width: 26%;
+  position: absolute;
+  background-color: #45E9FF;
+  opacity: .9;
+  border-radius: 50%;
+}
+
+.nav-top-right-box {
+  height: 40%;
+  width: 50%;
+  position: absolute;
+  top: 12%;
+  left: 20%;
+  background-color: #EFC341;
+  border-radius: 1vw 1vw 35% 35%;
+}
+
+.nav-bottom-left-box {
+  height: 30%;
+  width: 40%;
+  position: absolute;
+  bottom: 22%;
+  left: -6%;
+  border-radius: 35% 35% 1vw 1vw;
+  background-color: #FF6436;
+}
+
+.nav-h1-landing {
+  position: absolute;
+  color: #E93095;
+  font-size: 9vw;
+  text-shadow: 0 0 .02em white;
+  border-radius: .05em;
+}
+/* //\\  //\\  //\\  //\\ */
+/* || Navbar logo || */
 
 /* || Navbar styling || */
 /* \\//  \\//  \\//  \\// */
@@ -168,8 +226,8 @@ i.navbar-icons {
     opacity: 0;
   }
 }
-/* || Navbar styling || */
 /* //\\  //\\  //\\  //\\ */
+/* || Navbar styling || */
 
 
 
@@ -182,14 +240,13 @@ i.navbar-icons {
   top: 2vw;
 }
 
-.behind-h1-landing {
-  height: 110%;
-  width: 120%;
+.backing-box {
   position: absolute;
-  left: -15%;
-  top: -5%;
-  /* background: #3E4D5A; */
-  filter: blur(2em);
+  height: 21vw;
+  width: 45vw;
+  background-color: #97EDC4;
+  opacity: .4;
+  z-index: -50;
 }
 
 .blue-box {
@@ -199,7 +256,22 @@ i.navbar-icons {
   background-color: #45E9FF;
   opacity: .9;
   border-radius: 50%;
-  animation: circle-switch 9s .4s infinite;
+  animation: circle-switch 9s .4s infinite, circle-color 36s infinite;
+}
+
+@keyframes circle-color {
+  53% {
+    background-color: #45E9FF;
+  }
+  54% {
+    background-color: #4F2073;
+  }
+  60% {
+    background-color: #4F2073;
+  }
+  61% {
+    background-color: #45E9FF;
+  }
 }
 
 @keyframes circle-switch {
@@ -265,36 +337,49 @@ i.navbar-icons {
   color: #E93095;
   font-size: 9vw;
   text-shadow: 0 0 .02em white;
-  animation: h1-landing-flip 18s infinite;
+  border-radius: .05em;
+  animation: h1-landing-flip 36s infinite;
 }
 
 @keyframes h1-landing-flip {
-  12.5% {
-    transform: rotate3d(0,0,0,0) scale(1);
+  6.25% {
+    transform: rotate3d(0,0,0,0) scale(1) translate(0,0);
   }
-  17% {
-    transform: rotate3d(1,0,0,360deg) scale(1);
+  8.5% {
+    transform: rotate3d(1,0,0,360deg) scale(1) translate(0,0);
   }
-  50% {
-    transform: rotate3d(1,0,0,360deg) scale(1);
-  }
-  55% {
+  27% {
     /* filter: blur(0); */
-    transform: rotate3d(1,0,0,360deg) scale(1);
+    transform: rotate3d(1,0,0,360deg) scale(1) translate(0,0);
     box-shadow: 0 0;
   }
-  62% {
+  30% {
     /* filter: blur(.5vw); */
-    transform: rotate3d(1,0,0,360deg) scale(1.3);
+    transform: rotate3d(1,0,0,360deg) scale(1.3) translate(0,0);
     box-shadow: 0 0 1vw;
   }
-  80% {
+  42% {
     /* filter: blur(0); */
-    transform: rotate3d(1,0,0,360deg) scale(1);
+    transform: rotate3d(1,0,0,360deg) scale(1) translate(0,0);
     box-shadow: 0 0;
   }
-  90% {
-    transform: rotate3d(1,0,0,360deg) scale(1);
+  48% {
+    transform: rotate3d(1,0,0,360deg) scale(1) translate(0,0);
+  }
+  50% {
+    transform: rotate3d(1,0,0,360deg) scale(.5) translate(13vw, -5vw);
+  }
+  51% {
+    transform: rotate3d(1,0,0,360deg) scale(.5) translate(13vw, -5vw);
+  }
+  57% {
+    transform: rotate3d(1,0,0,360deg) scale(.5) translate(-21vw, -5vw);
+  }
+  64% {
+    transform: rotate3d(1,0,0,360deg) scale(1) translate(0,0);
+  }
+  100% {
+    transform: rotate3d(1,0,0,360deg) scale(1) translate(0,0);
   }
 }
 
@@ -309,10 +394,25 @@ i.navbar-icons {
     top: .7vw;
   }
 }
-/* || Landing page || */
 /* //\\  //\\  //\\  //\\ */
+/* || Landing page logo || */
 
 
+/* || Landing page || */
+/* \\//  \\//  \\//  \\// */
+.line-break {
+  border-top: 2px solid #2F535E;
+}
+
+.intro-text {
+  height: 25vw;
+  width: 45vw;
+  background-color: #97EDC4;
+  opacity: .4;
+  z-index: -50;
+}
+/* //\\  //\\  //\\  //\\ */
+/* || Landing page || */
 
 .test-img-col {
   background: yellow;
