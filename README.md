@@ -11,7 +11,7 @@ yo! favo is a web app for favoriting your top music, movies, tv shows, and games
 ### Desktop
 
 Landing page
-(wireframes/desktop/desktop-landing-page.png)
+![landing page](wireframes/desktop/desktop-landing-page.png)
 
 ## desktop
 
