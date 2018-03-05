@@ -1,4 +1,17 @@
-# yo-favo
+# yo!-favo
+
+yo! favo is a web app for favoriting your top music, movies, tv shows, and games and then sharing them with your friends.
+
+[LIVE SITE](https://yo-favo.herokuapp.com/)
+
+---
+
+## Wireframes
+
+### Desktop
+
+Landing page
+(/wireframes/desktop/desktop-landing-page.png)
 
 ## desktop
 
