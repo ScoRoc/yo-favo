@@ -34,7 +34,7 @@ footer {
 
 footer p {
   display: inline-block;
-  color: #D6E5D8;
+  color: papayawhip;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.2em;
@@ -495,15 +495,6 @@ i.navbar-icons {
 
 /* || profile page || */
 /* \\//  \\//  \\//  \\// */
-.profile-name:after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #FFEB00;
-  text-shadow: 0 0 .1vw #FFEB00;
-}
-
 #sortable {
   list-style-type: none;
   margin: 0;
@@ -524,6 +515,17 @@ i.navbar-icons {
   cursor: grab;
 }
 
+#sortable li {
+  counter-increment: myIndex;
+}
+
+#sortable li:before {
+  content: counter(myIndex);
+  position: absolute;
+  left: 4vw;
+  color: papayawhip;
+}
+
 #sortable li:active {
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
@@ -535,23 +537,42 @@ i.navbar-icons {
   left: 0;
 }
 
+#sortable li span + a:hover {
+  border-bottom: 2px solid #97EDC4;
+}
+
+.profile-name h1 {
+  color: papayawhip;
+  font-weight: 600;
+}
+
+.user-pic {
+  font-size: 20vw;
+}
+
+.edit-link {
+  color: #1E5157;
+}
+
+.edit-link:hover {
+  border-bottom: 2px solid papayawhip;
+  /* border-left: 2px solid papayawhip;
+  border-right: 2px solid papayawhip; */
+}
+
 .top-favo-box-row {
   margin: 0;
   padding: 0;
 }
 
 .top-favo-box-wrapper {
-  /* min-height: 22vw; */
   margin: 0;
-  /* padding: 2vw 2vw; */
   background: papayawhip;
 }
 
 .top-favo-box {
-  /* min-height: 22vw; */
   margin: 0;
   padding: 1vw 1vw .4vw !important;
-  /* background: papayawhip; */
 }
 
 .top-favo-desktop {
@@ -585,7 +606,7 @@ i.navbar-icons {
 }
 
 .top-game a, .top-movie a, .top-music a, .top-show a {
-  color: #97EDC4;
+  color: papayawhip;
 }
 
 .top-game p, .top-movie p, .top-music p, .top-show p {
@@ -594,38 +615,38 @@ i.navbar-icons {
 
 .top-game {
   background-color: #E93095;
-  color: #97EDC4;
+  /* color: red; */
 }
 
 .top-movie {
   background-color: #9D36E5;
-  color: #97EDC4;
+  /* color: #97EDC4; */
 }
 
 .top-music {
   background-color: #FF6436;
-  color: #97EDC4;
+  /* color: #97EDC4; */
 }
 
 .top-show {
   background-color: #DEB400;
-  color: #97EDC4;
+  /* color: #97EDC4; */
 }
 
 .top-game-mobile {
-  background-color: blue;
+  background-color: #E93095;
 }
 
 .top-movie-mobile {
-  background-color: red;
+  background-color: #9D36E5;
 }
 
 .top-music-mobile {
-  background-color: green;
+  background-color: #FF6436;
 }
 
 .top-show-mobile {
-  background-color: brown;
+  background-color: #DEB400;
 }
 /* //\\  //\\  //\\  //\\ */
 /* || profile page || */
@@ -663,7 +684,7 @@ i.navbar-icons {
 }
 
 .game-li a, .movie-li a, .music-li a, .tv-li a {
-  color: #97EDC4 !important;
+  color: papayawhip !important;
   font-weight: 500;
 }
 /* || favo category pages || */
@@ -674,7 +695,7 @@ i.navbar-icons {
 /* \\//  \\//  \\//  \\// */
 .outter-fab {
   background-color: #F06752;
-  color: #97EDC4;
+  color: papayawhip;
 }
 
 .fab-p {
