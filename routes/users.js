@@ -44,8 +44,7 @@ router.get('/:id/music', isLoggedIn, function(req, res) {
   });
 });
 
-//~~~~~~~~~~~~~~~MIGHT MAKE THIS A SPROFILE PAGE~~~~~~~~~~~
-//                           \\//
+//~~~~~~~~~~~~~~~THIS IS NOW PROFILE PAGE~~~~~~~~~~~
 // GET user's top list page
 router.get('/:id/profile', isLoggedIn, function(req, res) {
   db.sequelize.query('SELECT favos.id, favos.name, favos.type, favos_users.order ' +
@@ -73,23 +72,27 @@ router.get('/:id/tv', isLoggedIn, function(req, res) {
   });
 });
 
-//~~~~~~~~~~~MIGHT NOT USE~~~~~~~~~~~
-//               \\//
-// GET user's profile page
-// router.get('/:id/profile', isLoggedIn, function(req, res) {
-//   db.user.find({
-//     where: {id: req.user.id}
-//   }).then(function(user) {
-//     res.render('users/show', {user: user});
-//   });
-// });
-
 // GET update user info page
 router.get('/:id/update', isLoggedIn, function(req, res) {
   db.user.find({
     where: {id: req.user.id}
   }).then(function(user) {
     res.render('users/update', {user: user});
+  });
+});
+
+// GET user's public page
+router.get('/:id/public', function(req, res) {
+  db.sequelize.query('SELECT users.first_name, favos.id, favos.name, favos.type, favos_users.order ' +
+  'FROM users ' +
+  'RIGHT JOIN favos_users ON users.id = favos_users."userId" ' +
+  'JOIN favos ON favos_users."favoId" = favos.id ' +
+  'WHERE favos_users."userId" = ' + req.params.id + ' ' +
+  'AND favos_users.order = ( ' +
+  'SELECT MIN (favos_users.order) FROM favos_users)'
+  ).then(function(topFavos) {
+    // res.send(topFavos);
+    res.render('users/public-profile', {topFavos: topFavos});
   });
 });
 

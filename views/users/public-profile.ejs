@@ -1,10 +1,8 @@
 <% include ../partials/header-top %>
 
-<title>yo! favo | <%= currentUser.first_name %>'s profile page</title>
+<title>yo! favo | <%= topFavos[0][0].first_name %>'s profile page</title>
 
 <% include ../partials/header-bottom %>
-
-<% include ../partials/profile-top %>
 
 <!-- body content goes below here -->
 
@@ -15,21 +13,11 @@
         <i class="fas user-pic fa-user-circle"></i>
       </div>
     </div>
-    <div class="row">
-      <div class="col s12 center-align">
-        <a class="edit-link" href="/users/<%= currentUser.id %>/update">edit yo! profile</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 center-align">
-        <p>Click <a class="share-link" href="/users/<%= currentUser.id %>/public">here</a> to open your public page and share the url with your friends!</p>
-      </div>
-    </div>
   </div>
   <div class="col s12 l8">
     <div class="row">
       <div class="col s12 center-align">
-        <h3 class="top-list-h4">yo! top list</h3>
+        <h2 class="shared-list-h2"><%= topFavos[0][0].first_name %>'s top list</h2>
       </div>
       <div class="row">
         <div class="col s12">

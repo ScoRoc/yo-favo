@@ -33,6 +33,10 @@ form input {
 
 }
 
+.shared-list-h2 {
+  color: papayawhip;
+}
+
 #toast-container {
   top: auto !important;
   right: auto !important;
@@ -677,23 +681,13 @@ i.navbar-icons {
 
 .intro-text-wrapper {
   position: relative;
-}
-
-.intro-text {
-  position: relative;
-  height: 25vw;
-  width: 45vw;
   margin-bottom: 10vw;
-  background-color: #97EDC4;
-  opacity: .4;
-  z-index: -50;
+  padding: 2vw;
+  background-color: papayawhip;
 }
 
 .intro-text-wrapper p {
-  position: absolute;
-  top: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   color: #193542;
 }
 /* //\\  //\\  //\\  //\\ */
@@ -764,6 +758,15 @@ i.navbar-icons {
   border-bottom: 2px solid papayawhip;
   /* border-left: 2px solid papayawhip;
   border-right: 2px solid papayawhip; */
+}
+
+.share-link {
+  color: #1E5157;
+  font-weight: bold;
+}
+
+.share-link:hover {
+  border-bottom: 2px solid papayawhip;
 }
 
 .top-favo-box-row {
