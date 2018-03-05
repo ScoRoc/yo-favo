@@ -40,8 +40,8 @@ var mobileNavAway = function() {
 };
 
 // calls the mobile nav displays/aways with click and touch
-$('#mobile-search-trigger').on('click', mobileNavDisplay);
-$('.darken-body').on('click', mobileNavAway);
+// $('#mobile-search-trigger').on('click', mobileNavDisplay);
+// $('.darken-body').on('click', mobileNavAway);
 $('#mobile-search-trigger').on('touchend', mobileNavDisplay);
 $('.darken-body').on('touchend', mobileNavAway);
 
