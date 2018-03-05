@@ -12,38 +12,54 @@
 <!-- body content goes below here -->
 
 <div class="row">
-  <div class="col s4 offset-s1 center-align">
-    <h1 class="h1-show">yo! favo</h1>
+  <div class="col s12 show-page-wrapper">
+    <div class="row">
+      <div class="col s10 offset-s1 center-align">
+        <!-- Add the forEach line below win I add multiple find feature -->
+        <!-- and when I add reccomendation feature -->
+        <!-- <% results.Similar.Info.forEach(function(item) { %> -->
+        <div class="row favo-show-name-row">
+          <div class="col s12">
+            <% var item = results.Similar.Info[0]; %>
+            <h2 class="favo-page-h2"><span><%= item.Name %></span></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 center-align">
+            <p>category: <%= item.Type %></p>
+          </div>
+        </div>
+
+          <form class="add-favo-form" action="/favos" method="post">
+            <input type="hidden" name="name" value="<%= item.Name %>">
+            <input type="hidden" name="type" value="<%= item.Type %>">
+            <input type="hidden" name="wTeaser" value="<%= item.wTeaser %>">
+            <input type="hidden" name="wUrl" value="<%= item.wUrl %>">
+            <input type="hidden" name="yUrl" value="<%= item.yUrl %>">
+            <input type="hidden" name="yId" value="<%= item.yId %>">
+
+            <input class="add-favo-submit submit_favo" type="submit" value="Add to favos">
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s10 offset-s1">
+          <div class="show-favo-p-wrapper">
+            <p><%= item.wTeaser %><br><br>See more on <a href="<%= item.wUrl %>" >Wikipedia</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s10 offset-s1 center-align">
+          <iframe width="640" height="360" src="<%= item.yUrl %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    <!-- <% }); %> -->
   </div>
 </div>
-
-<hr>
-
-<!-- TEST API INFO BELOW HERE -->
-
-<% results.Similar.Info.forEach(function(item) { %>
-  <h4><%= item.Name %></h4>
-
-  <form action="/favos" method="post">
-    <input type="hidden" name="name" value="<%= item.Name %>">
-    <input type="hidden" name="type" value="<%= item.Type %>">
-    <input type="hidden" name="wTeaser" value="<%= item.wTeaser %>">
-    <input type="hidden" name="wUrl" value="<%= item.wUrl %>">
-    <input type="hidden" name="yUrl" value="<%= item.yUrl %>">
-    <input type="hidden" name="yId" value="<%= item.yId %>">
-
-    <input class="submit_favo" type="submit" value="Add to favos">
-  </form>
-
-  <div class="divider"></div>
-
-  <p><%= item.Type %></p>
-  <p><%= item.wTeaser %></p>
-  <p><%= item.wUrl %></p>
-  <p><%= item.yUrl %></p>
-  <p><%= item.yId %></p>
-
-<% }); %>
 
 
 
