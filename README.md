@@ -7,16 +7,16 @@ yo! favo is a web app for favoriting your top music, movies, tv shows, and games
 ---
 ## Technologies Used
 
--HTML
--CSS
--JavaScript
--jQuery
--jQuery UI
--Touch Punch
--Materialize
--PostgresQL
--Sequelize
--Node.js
++HTML
++CSS
++JavaScript
++jQuery
++jQuery UI
++Touch Punch
++Materialize
++PostgresQL
++Sequelize
++Node.js
 
 ## APIs Used
 
