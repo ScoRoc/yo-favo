@@ -493,23 +493,25 @@ i.navbar-icons {
 /* //\\  //\\  //\\  //\\ */
 /* || Landing page || */
 
-.test-img-col {
-  background: yellow;
-}
-
-.test-title-col {
-  background: yellow;
+/* || profile page || */
+/* \\//  \\//  \\//  \\// */
+.profile-name:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFEB00;
+  text-shadow: 0 0 .1vw #FFEB00;
 }
 
 #sortable {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 80%;
 }
 
 #sortable li {
-  margin: 0 3px 3px 3px;
+  margin-bottom: .4vw;
   padding: 0.4em;
   padding-left: 1.5em;
   padding-bottom: 1.7em;
@@ -538,18 +540,27 @@ i.navbar-icons {
   padding: 0;
 }
 
-.row .col .top-favo-box {
+.top-favo-box-wrapper {
+  /* min-height: 22vw; */
   margin: 0;
-  padding: 0;
+  /* padding: 2vw 2vw; */
+  background: papayawhip;
+}
+
+.top-favo-box {
+  /* min-height: 22vw; */
+  margin: 0;
+  padding: 1vw 1vw .4vw !important;
+  /* background: papayawhip; */
 }
 
 .top-favo-desktop {
-  min-height: 8vw;
-  min-width: 28vw;
-  height: 100%;
+  position: relative;
+  top: .5vw;
+  min-height: 9vw;
+  min-width: 24vw;
   margin: 0;
   padding-top: .1vw;
-  background: papayawhip;
 }
 
 .top-favo-desktop-name {
@@ -616,6 +627,20 @@ i.navbar-icons {
 .top-show-mobile {
   background-color: brown;
 }
+/* //\\  //\\  //\\  //\\ */
+/* || profile page || */
+
+/* || favo category pages || */
+/* \\//  \\//  \\//  \\// */
+.category-name {
+  font-weight: 600;
+  text-shadow: 0 0 .1vw papayawhip;
+}
+
+.sortable-wrapper {
+  padding: .8vw;
+  background-color: papayawhip;
+}
 
 .game-li {
   background-color: #E93095;
@@ -641,7 +666,8 @@ i.navbar-icons {
   color: #97EDC4 !important;
   font-weight: 500;
 }
-
+/* || favo category pages || */
+/* //\\  //\\  //\\  //\\ */
 
 
 /* || FAB Buttons || */
@@ -891,34 +917,5 @@ i.navbar-icons {
     transform: translate(0,0);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //\\  //\\  //\\  //\\ */
 /* || FAB buttons || */
