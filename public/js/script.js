@@ -40,10 +40,10 @@ var mobileNavAway = function() {
 };
 
 // calls the mobile nav displays/aways with click and touch
-$('#mobile-search-trigger').on('touchend click', mobileNavDisplay);
-$('.darken-body').on('touchend click', mobileNavAway);
-// $('#mobile-search-trigger').on('touchend', mobileNavDisplay);
-// $('.darken-body').on('touchend', mobileNavAway);
+$('#mobile-search-trigger').on('click', mobileNavDisplay);
+$('.darken-body').on('click', mobileNavAway);
+$('#mobile-search-trigger').on('touchend', mobileNavDisplay);
+$('.darken-body').on('touchend', mobileNavAway);
 
 // updates a user's favo order
 var updateOrder = function(event, ui) {

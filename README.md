@@ -5,6 +5,15 @@ yo! favo is a web app for favoriting your top music, movies, tv shows, and games
 [LIVE SITE](https://yo-favo.herokuapp.com/)
 
 ---
+## Technologies Used:
+
+-HTML
+-CSS
+-JavaScript
+-jQuery
+-jQuery UI
+-Touch Punch
+-Materialize
 
 ## Wireframes
 
