@@ -1,6 +1,6 @@
 # yo!-favo
 
-yo! favo is a web app for favoriting your top music, movies, tv shows, and games and then sharing them with your friends.
+yo! favo is a web app for favoriting your top music, movies, tv shows, and games and then sharing them with your friends. It was created for Project 2 at General Assembly, WDI-17.
 
 [LIVE SITE](https://yo-favo.herokuapp.com/)
 
@@ -13,51 +13,96 @@ yo! favo is a web app for favoriting your top music, movies, tv shows, and games
 Landing page
 ![landing page](wireframes/desktop/desktop-landing-page.png)
 
-## desktop
+Item page after search
+![item page](wireframes/desktop/desktop-item-page.png)
 
-desktop landing page wireframe link
-https://wireframe.cc/6brMMI
+Profile page
+![landing page](wireframes/desktop/desktop-profile-page.png)
 
-desktop modal for login/signup
-https://wireframe.cc/FWMdcg
+Profile top page
+![landing page](wireframes/desktop/desktop-top-list.png)
 
-desktop show page for an item
-https://wireframe.cc/qXCmKK
+Profile category page
+![landing page](wireframes/desktop/desktop-profile-category-page.png)
 
-desktop profile page
-https://wireframe.cc/dxLAib
+Profile update page
+![landing page](wireframes/desktop/desktop-update-page.png)
 
-desktop profile top music/category page
-https://wireframe.cc/9q7SzX
+Profile shared page
+![landing page](wireframes/desktop/desktop-shared-top-list.png)
 
-desktop profile top list page
-https://wireframe.cc/iGF8OT
+### Mobile
 
-desktop update profile page
-https://wireframe.cc/FMVDDr
+Landing page
+![landing page](wireframes/mobile/mobile-landing-page.png)
 
-desktop shared top list page
-https://wireframe.cc/pqyfpO
+Item page after search
+![item page](wireframes/mobile/mobile-item-page.png)
 
-## mobile
+Profile page
+![landing page](wireframes/mobile/mobile-profile-page.png)
 
-mobile landing page
-https://wireframe.cc/68tgRD
+Profile top page
+![landing page](wireframes/mobile/mobile-top-list.png)
 
-mobile show page for an item
-https://wireframe.cc/urcuvU
+Profile category page
+![landing page](wireframes/mobile/mobile-profile-category-page.png)
 
-mobile profile page
-https://wireframe.cc/XHDqRN
+Profile update page
+![landing page](wireframes/mobile/mobile-update-page.png)
 
-mobile profile top music/category page
-https://wireframe.cc/hlTpiF
+Profile shared page
+![landing page](wireframes/mobile/mobile-shared-top-list.png)
 
-mobile profile top list page
-https://wireframe.cc/NcfPNe
+## Color Palette
 
-mobile update profile page
-https://wireframe.cc/7auKj8
+Off White
+![off white](color_palette/off-white.png)
 
-mobile shared top list page
-https://wireframe.cc/NwTuNu
+Bright Yellow
+![Bright Yello](color_palette/bright-yellow.png)
+
+Yellow
+![Yellow](color_palette/yellow.png)
+
+Dull Yellow
+![Dull Yellow](color_palette/dull-yellow.png)
+
+Dark Yellow
+![Dark Yellow](color_palette/dark-yellow.png)
+
+Coral
+![Coral](color_palette/coral.png)
+
+Bright Orange
+![Bright Orange](color_palette/bright-orange.png)
+
+Pink
+![Pink](color_palette/pink.png)
+
+Light Purple
+![Light Purple](color_palette/light-purple.png)
+
+Medium Purple
+![Medium Purple](color_palette/med-purple.png)
+
+Dark Purple
+![Dark Purple](color_palette/dark-purple.png)
+
+Light Blue
+![Light Blue](color_palette/light-blue.png)
+
+Pale Mint
+![Pale Mint](color_palette/pale-mint.png)
+
+Mint
+![Mint](color_palette/mint.png)
+
+Deep Mint
+![Deep Mint](color_palette/deep-mint.png)
+
+Dark Teal
+![Dark Teal](color_palette/dark-teal.png)
+
+Extra Dark Teal
+![Extra Dark Teal](color_palette/extra-dark-teal.png)
