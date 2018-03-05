@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var db = require('../models');
 var request = require('request');
+var isLoggedIn = require('../middleware/isLoggedIn');
+
 
 // router.get('/', function(req, res) {
 //   res.send('list of all favos');
@@ -54,7 +56,7 @@ router.get('/:name', function(req, res) {
 });
 
 // POST adds favo to favo table
-router.post('/', function(req, res) {
+router.post('/', isLoggedIn, function(req, res) {
   db.favo.findOrCreate({
     where: {
       name: req.body.name
