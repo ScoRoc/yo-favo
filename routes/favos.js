@@ -9,24 +9,24 @@ var isLoggedIn = require('../middleware/isLoggedIn');
 //   res.send('list of all favos');
 // });
 
-router.get('/', function(req, res) {
-  var tDurl = 'https://tastedive.com/api/similar';
-  var taste_data = {
-    k: process.env.TASTE_DIVE_KEY,
-    q: 'world of warcraft',
-    limit: 5,
-    info: 1
-  };
-  request({
-    url: tDurl,
-    qs: taste_data
-  }, function(error, response, body) {
-    if (!error && response.statusCode === 200) {
-      var dataObj = JSON.parse(body);
-      res.render('favos/index', {results: dataObj});
-    }
-  });
-});
+// router.get('/', function(req, res) {
+//   var tDurl = 'https://tastedive.com/api/similar';
+//   var taste_data = {
+//     k: process.env.TASTE_DIVE_KEY,
+//     q: 'world of warcraft',
+//     limit: 5,
+//     info: 1
+//   };
+//   request({
+//     url: tDurl,
+//     qs: taste_data
+//   }, function(error, response, body) {
+//     if (!error && response.statusCode === 200) {
+//       var dataObj = JSON.parse(body);
+//       res.render('favos/index', {results: dataObj});
+//     }
+//   });
+// });
 
 ////// WORKING!!!!!!
 // but maybe add recomendation???
