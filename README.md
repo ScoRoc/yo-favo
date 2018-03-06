@@ -18,6 +18,9 @@ yo!favo Homepage
 - [Styling/Animations](https://github.com/ScoRoc/yo-favo#styling--animations)
 - [Wireframes](https://github.com/ScoRoc/yo-favo#wireframes)
 - [Next Steps](https://github.com/ScoRoc/yo-favo#next-steps)
+- [WIP Screenshots](https://github.com/ScoRoc/yo-favo#work-in-progress-screenshots)
+- [Desktop Wireframe Images](https://github.com/ScoRoc/yo-favo#desktop)
+- [Mobile Wireframe Images](https://github.com/ScoRoc/yo-favo#mobile)
 
 ---
 ## Technologies Used
