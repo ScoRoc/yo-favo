@@ -7,27 +7,32 @@ yo! favo is a web app for favoriting your top music, movies, tv shows, and games
 ---
 ## Technologies Used
 
-+HTML
-+CSS
-+JavaScript
-+jQuery
-+jQuery UI
-+Touch Punch
-+Materialize
-+PostgresQL
-+Sequelize
-+Node.js
+- HTML5 / CSS3
+- JavaScript
+- jQuery
+- jQuery UI / Touch Punch
+- Materialize
+- Node.js
+- Express
+- EJS
+- BCrypt
+- Passport
+- Session
+- PostgresQL
+- Sequelize
 
 ## APIs Used
 
 -[Taste D!ve](https://tastedive.com/read/api)
+
+
 
 ## Wireframes
 
 ### Desktop
 
 Landing page
-![landing page](wireframes/desktop/desktop-landing-page.png)
+![landing page](wireframes/desktop/desktop-landing-page.png =50%x50%)
 
 Item page after search
 ![item page](wireframes/desktop/desktop-item-page.png)
@@ -42,7 +47,7 @@ Profile category page
 ![landing page](wireframes/desktop/desktop-profile-category-page.png)
 
 Profile update page
-![landing page](wireframes/desktop/desktop-update-page.png)
+![landing page](wireframes/desktop/desktop-profile-update-page.png)
 
 Profile shared page
 ![landing page](wireframes/desktop/desktop-shared-top-list.png)
