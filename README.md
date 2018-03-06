@@ -4,9 +4,6 @@
 
 https://yo-favo.herokuapp.com/
 
-yo!favo Homepage
-![yo! favo homepage](finished_screenshots/homepage.png)
-
 ### Jump to...
 
 - [Technologies Used](https://github.com/ScoRoc/yo-favo#technologies-used)
@@ -21,6 +18,9 @@ yo!favo Homepage
 - [WIP Screenshots](https://github.com/ScoRoc/yo-favo#work-in-progress-screenshots)
 - [Desktop Wireframe Images](https://github.com/ScoRoc/yo-favo#desktop)
 - [Mobile Wireframe Images](https://github.com/ScoRoc/yo-favo#mobile)
+
+yo!favo Homepage
+![yo! favo homepage](finished_screenshots/homepage.png)
 
 ---
 ## Technologies Used
@@ -129,6 +129,8 @@ The navbar adjust for mobile, with two major changes. The first is that the drop
 [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 Perhaps one of the most important part of any product is it's style. If a user does not want to use something, they won't use it no matter how many features are packed in. Because of this, I wanted to design a website that would be engaging in color, layout, usage, and animations. Small details, like the footer having a triangular shape at it's top and appearing as though light is shining from one side of it's top to the other, engages the user and keeps them wanting to come back.
+
+![footer](finished_screenshots/footer.png)
 
 #### Custom Built Animations
 [Logo](https://github.com/ScoRoc/yo-favo#logo) | [Navbar Logo](https://github.com/ScoRoc/yo-favo#navbar-logo) | [FABs](https://github.com/ScoRoc/yo-favo#fabs-fixed-action-buttons-in-the-bottom-right-hand-corner) | [LinkedIn FAB](https://github.com/ScoRoc/yo-favo#linkedin) | [Github FAB](https://github.com/ScoRoc/yo-favo#github) | [Codepen FAB](https://github.com/ScoRoc/yo-favo#codepen) | [Soundcloud FAB](https://github.com/ScoRoc/yo-favo#soundcloud) | [Mobile Search Box Popup](https://github.com/ScoRoc/yo-favo#mobile-search-box) | [Add Favo Button](https://github.com/ScoRoc/yo-favo#add-favo-button) | [Submit Buttons](https://github.com/ScoRoc/yo-favo#submit-buttons-loginsignup-pages) | [Color Palette](https://github.com/ScoRoc/yo-favo#color-palette)
