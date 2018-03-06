@@ -32,7 +32,7 @@ yo! favo is a web app for favoriting your top music, movies, tv shows, and games
 ### Desktop
 
 Landing page
-![landing page](wireframes/desktop/desktop-landing-page.png =50%x50%)
+![landing page](wireframes/desktop/desktop-landing-page.png =50x50)
 
 Item page after search
 ![item page](wireframes/desktop/desktop-item-page.png)
