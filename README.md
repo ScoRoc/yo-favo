@@ -131,10 +131,12 @@ The navbar adjust for mobile, with two major changes. The first is that the drop
 Perhaps one of the most important part of any product is it's style. If a user does not want to use something, they won't use it no matter how many features are packed in. Because of this, I wanted to design a website that would be engaging in color, layout, usage, and animations. Small details, like the footer having a triangular shape at it's top and appearing as though light is shining from one side of it's top to the other, engages the user and keeps them wanting to come back.
 
 #### Custom Built Animations
-[Logo](https://github.com/ScoRoc/yo-favo#logo) | [Navbar Logo](https://github.com/ScoRoc/yo-favo#navbar-logo) | [FABs](https://github.com/ScoRoc/yo-favo#fab-buttons-fixed-action-buttons-in-the-bottom-right-hand-corner) | [LinkedIn FAB](https://github.com/ScoRoc/yo-favo#linkedin) | [Github FAB](https://github.com/ScoRoc/yo-favo#github) | [Codepen FAB](https://github.com/ScoRoc/yo-favo#codepen) | [Soundcloud FAB](https://github.com/ScoRoc/yo-favo#soundcloud) | [Mobile Search Box Popup](https://github.com/ScoRoc/yo-favo#mobile-search-box) | [Add Favo Button](https://github.com/ScoRoc/yo-favo#add-favo-button) | [Submit Buttons](https://github.com/ScoRoc/yo-favo#submit-buttons-loginsignup-pages) | [Color Palette](https://github.com/ScoRoc/yo-favo#color-palette)
+[Logo](https://github.com/ScoRoc/yo-favo#logo) | [Navbar Logo](https://github.com/ScoRoc/yo-favo#navbar-logo) | [FABs](https://github.com/ScoRoc/yo-favo#fabs-fixed-action-buttons-in-the-bottom-right-hand-corner) | [LinkedIn FAB](https://github.com/ScoRoc/yo-favo#linkedin) | [Github FAB](https://github.com/ScoRoc/yo-favo#github) | [Codepen FAB](https://github.com/ScoRoc/yo-favo#codepen) | [Soundcloud FAB](https://github.com/ScoRoc/yo-favo#soundcloud) | [Mobile Search Box Popup](https://github.com/ScoRoc/yo-favo#mobile-search-box) | [Add Favo Button](https://github.com/ScoRoc/yo-favo#add-favo-button) | [Submit Buttons](https://github.com/ScoRoc/yo-favo#submit-buttons-loginsignup-pages) | [Color Palette](https://github.com/ScoRoc/yo-favo#color-palette)
 
 
 ##### Logo
+
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
 
 ![logo](animation_screenshots/logo.png)
 
@@ -142,11 +144,16 @@ The main logo on the home page was designed to be sort of throwback, with blocke
 
 ##### Navbar Logo
 
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
+
+
 ![navbar logo](animation_screenshots/navbar-logo.png)  ![navbar logo changed](animation_screenshots/navbar-logo-changed.png)
 
 A smaller version of the logo that stays with the user on each page, including mobile. Hovering the mouse over the logo or holding your finger on this logo will trigger it's animation. The logo appears as one item on the navbar but after triggering the animation it splits into 3 sections. The box and shapes inside it grow in size and rotate -15 degrees. The word 'yo' rotates and grows the same but as the box/shapes but it pops out of the box and sits below it after the rotation. The word 'favo' grows the same but rotates even farther at -90 degrees. It also moves slightly to line up it's 'o' with the 'o' in yo. All of the colors for the entire logo shift during this animation.
 
 ##### FABs (Fixed Action Buttons in the bottom right hand corner)
+
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
 
 ![all fab](animation_screenshots/all-fab.png)
 
@@ -154,11 +161,15 @@ Although the FAB is a default Materialize item, I wanted to break away from Mate
 
 ###### LinkedIn
 
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
+
 ![linkedin fab](animation_screenshots/linkedin.png)
 
 This FAB breaks away from it's box-shadow and zooms out of view to the right, then back on screen from the left. The box-shadow does the opposite.
 
 ###### Github
+
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
 
 ![github](animation_screenshots/github.png)
 
@@ -166,11 +177,15 @@ This FAB grows and rotates in a rocking manner.
 
 ###### Codepen
 
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
+
 ![codepen](animation_screenshots/codepen.png)
 
 This FAB blurs to the point where you can barely see it and then becomes transparent. While invisible, it shifts to a position above where it first was and then becomes opaque again. The blur is reduced to reveal the FAB and then it slowly drops down back into place. This animation gives a vanish/reveal magic trick sort of vibe.
 
 ###### Soundcloud
+
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
 
 ![soundcloud](animation_screenshots/soundcloud.png)
 
@@ -178,11 +193,15 @@ Being that this is a link to my band's Soundcloud, I thought it fitting to have 
 
 ##### Mobile Search Box
 
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
+
 ![mobile nav darken](animation_screenshots/mobile-nav-darken.png)
 
 On mobile, the search box turns into a search button which the user must touch to bring up. I wanted to keep the mobile view clean and removing the search box seemed the way to go. Once the user touches search icon, the search box appears and the rest of the screen dims to bring the user's focus to the search box. The user can either type in the box and hit enter or they can touch outside the box to close it.
 
 ##### Add Favo Button
+
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
 
 ![add favo](animation_screenshots/add-favo.png)  ![add favo changed](animation_screenshots/add-favo-changed.png)
 
@@ -190,11 +209,15 @@ This button starts off mostly flat and purple. The first animation has the edges
 
 ##### Submit Buttons (Login/Signup pages)
 
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
+
 ![submit](animation_screenshots/submit.png)  ![submit changed](animation_screenshots/submit-changed.png)
 
 These are much simpler animations where the colors just invert and the button grows slightly upon hovering.
 
 #### Color Palette
+
+[Animation/Styling menu](https://github.com/ScoRoc/yo-favo#custom-built-animations)
 
 Here are all of the colors used in the project:
 
@@ -229,25 +252,44 @@ There quite a few features I'd like to add in here. The more immediate ones bein
 A more lofty goal would be to integrate other sites with this app. For example, linking your Spotify, Hulu, Netflix, and Steam accounts would allow you to favorite items you've watched/listened to/played or conversely, if you favorite one on yo! favo it would allow you to automatically add it to your other appropriate account.
 
 ## Work In Progress Screenshots
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 Here is a collection of screenshots throughout the week of various stages on various pages. This will give you a glimpse of what the app looked like from the start to the end.
 
+[Initial homepage](https://github.com/ScoRoc/yo-favo#initial-homepage-showing-api-results) | [Initial profile page](https://github.com/ScoRoc/yo-favo#initial-profile-page) | [Category page with sortable element](https://github.com/ScoRoc/yo-favo#top-category-page-with-sortable-element) | [Mobile category page with sortable](https://github.com/ScoRoc/yo-favo#mobile-top-category-page-with-sortable-element) | [Row/Column blockout for styling](https://github.com/ScoRoc/yo-favo#blocking-out-the-rows-and-columns-for-styling-purposes) | [Nearly finished homepage](https://github.com/ScoRoc/yo-favo#nearly-completed-landing-page)
+
 ##### Initial homepage showing API results:
+[WIP screenshot menu](https://github.com/ScoRoc/yo-favo#work-in-progress-screenshots) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![homepage with api results](wip_screenshots/home_page_with_api_results.png)
 
 ##### Initial profile page:
+
+[WIP screenshot menu](https://github.com/ScoRoc/yo-favo#work-in-progress-screenshots) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+
 ![profile page](wip_screenshots/profile_page.png)
 
 ##### Top category page with sortable element:
+
+[WIP screenshot menu](https://github.com/ScoRoc/yo-favo#work-in-progress-screenshots) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+
 ![profile top tv](wip_screenshots/profile_top_tv_sortable.png)
 
 ##### Mobile top category page with sortable element:
+
+[WIP screenshot menu](https://github.com/ScoRoc/yo-favo#work-in-progress-screenshots) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+
 ![profile mobile](wip_screenshots/profile_mobile_top_tv_sortable.png)
 
 ##### Blocking out the rows and columns for styling purposes:
+
+[WIP screenshot menu](https://github.com/ScoRoc/yo-favo#work-in-progress-screenshots) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+
 ![profile page row col blockout](wip_screenshots/profile_page_row_col_blockout.png)
 
 ##### Nearly completed landing page:
+
+[WIP screenshot menu](https://github.com/ScoRoc/yo-favo#work-in-progress-screenshots) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+
 ![landing page](wip_screenshots/landing_page_starter_styling.png)
 
 *END of content. Wireframe images below*
@@ -258,31 +300,31 @@ Here is a collection of screenshots throughout the week of various stages on var
 Desktop wireframes
 
 ##### Landing page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Mobile version](https://github.com/ScoRoc/yo-favo#landing-page-1) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/desktop/desktop-landing-page.png)
 
 ##### Item page after search
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Mobile version](https://github.com/ScoRoc/yo-favo#item-page-after-search-1) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![item page](wireframes/desktop/desktop-item-page.png)
 
 ##### Profile page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Mobile version](https://github.com/ScoRoc/yo-favo#profile-page-1) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/desktop/desktop-profile-page.png)
 
 ##### Profile top page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Mobile version](https://github.com/ScoRoc/yo-favo#profile-top-page-1) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/desktop/desktop-profile-top-list.png)
 
 ##### Profile category page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Mobile version](https://github.com/ScoRoc/yo-favo#profile-category-page-1) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/desktop/desktop-profile-category-page.png)
 
 ##### Profile update page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Mobile version](https://github.com/ScoRoc/yo-favo#profile-update-page-1) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/desktop/desktop-profile-update-page.png)
 
 ##### Profile shared page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Mobile version](https://github.com/ScoRoc/yo-favo#profile-shared-page-1##### ) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/desktop/desktop-shared-top-list.png)
 
 ---
@@ -293,31 +335,31 @@ Desktop wireframes
 Mobile wireframes
 
 ##### Landing page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Desktop version](https://github.com/ScoRoc/yo-favo#landing-page) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/mobile/mobile-landing-page.png)
 
 ##### Item page after search
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Desktop version](https://github.com/ScoRoc/yo-favo#item-page-after-search) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![item page](wireframes/mobile/mobile-item-page.png)
 
 ##### Profile page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Desktop version](https://github.com/ScoRoc/yo-favo#profile-page) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/mobile/mobile-profile-page.png)
 
 ##### Profile top page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Desktop version](https://github.com/ScoRoc/yo-favo#profile-top-page) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/mobile/mobile-profile-top-list.png)
 
 ##### Profile category page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Desktop version](https://github.com/ScoRoc/yo-favo#profile-category-page) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/mobile/mobile-profile-category-page.png)
 
 ##### Profile update page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Desktop version](https://github.com/ScoRoc/yo-favo#profile-update-page) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/mobile/mobile-profile-update-page.png)
 
 ##### Profile shared page
-[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+[Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [Desktop version](https://github.com/ScoRoc/yo-favo#profile-shared-page) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 ![landing page](wireframes/mobile/mobile-shared-top-list.png)
 
 [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
