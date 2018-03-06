@@ -1,6 +1,6 @@
 # yo!-favo
 
-yo! favo is a web app for favoriting your top music, movies, tv shows, and games and then sharing them with your friends. It was created for Project 2 at General Assembly, WDI-17.
+yo! favo is a web app for favoriting your top music, movies, tv shows, and games - *called a "favo"* - and then sharing them with your friends. It was created for Project 2 at General Assembly, WDI-17.
 
 [LIVE SITE](https://yo-favo.herokuapp.com/)
 
@@ -29,6 +29,46 @@ yo! favo is a web app for favoriting your top music, movies, tv shows, and games
 
 ## Wireframes
 
+I have included my wireframes for both desktop and mobile. However, for ease of read I have included the actual images at the bottom of this README, below all of the content. You will find a wireframe for each of the main pages used:
+
+- **Landing Page:** home page of the entire site
+- **Search Page:** the page rendered after searching for a favo
+- **Profile Page:** original idea for the main user profile page
+- **Profile Top List Page:** original idea for a users top list page, which ended up becoming the main user profile page
+- **Profile Top Category Page:** user profile page showing their favos for a specific category
+- **Profile Update Page:** the page where a user can update their info
+- **Profile Shared Page:** unauthenticated page showing a user's top list - meant as a page to share your favos with your friends because you can't change anything and you don't need to be logged in to view it
+
+## Color Palette
+
+Off White ![off white](color_palette/off-white.png)  Bright Yellow ![Bright Yello](color_palette/bright-yellow.png)
+
+Yellow
+![Yellow](color_palette/yellow.png)  Dull Yellow ![Dull Yellow](color_palette/dull-yellow.png)
+
+Dark Yellow ![Dark Yellow](color_palette/dark-yellow.png)  Coral ![Coral](color_palette/coral.png)
+
+Bright Orange ![Bright Orange](color_palette/bright-orange.png)  Pink ![Pink](color_palette/pink.png)
+
+Light Purple ![Light Purple](color_palette/light-purple.png)  Medium Purple ![Medium Purple](color_palette/med-purple.png)
+
+Dark Purple ![Dark Purple](color_palette/dark-purple.png)  Light Blue ![Light Blue](color_palette/light-blue.png)
+
+Pale Mint ![Pale Mint](color_palette/pale-mint.png)  Mint ![Mint](color_palette/mint.png)
+
+Deep Mint ![Deep Mint](color_palette/deep-mint.png)  Dark Teal ![Dark Teal](color_palette/dark-teal.png)
+
+Extra Dark Teal ![Extra Dark Teal](color_palette/extra-dark-teal.png)
+
+## About the project
+
+I came up with this idea after wanting to do something with music. I found this API and it let you search more than just music as well as giving recommendations. With this information, I decided  to put together a sort of favorites list that you can share with your friends. This app includes a user login with authentication features. Once logged in, after searching for music, movies, tv shows, or games, you can then add an item to your favorites list that will auto populate in your favorites for each category. You can sort and delete each item in a category and the number next to it automatically updates. After sorting, your top item in each category will show up on your profile page. You can then click on the share link to share a copy of your favorites list that doesn't require a login to view.
+
+This app is fully responsive for all devices and required custom formatting for many items. In addition, there are many custom animations that were built, both for fun/user enjoyment as well as out of necessity to achieve desired effects.
+
+*END except for  wireframe images*
+---
+
 ### Desktop
 
 Landing page
@@ -52,6 +92,8 @@ Profile update page
 Profile shared page
 ![landing page](wireframes/desktop/desktop-shared-top-list.png)
 
+---
+
 ### Mobile
 
 Landing page
@@ -74,61 +116,3 @@ Profile update page
 
 Profile shared page
 ![landing page](wireframes/mobile/mobile-shared-top-list.png)
-
-## Color Palette
-
-Off White
-![off white](color_palette/off-white.png) | Bright Yellow ![Bright Yello](color_palette/bright-yellow.png)
-
-
-
-Yellow
-![Yellow](color_palette/yellow.png)
-
-Dull Yellow
-![Dull Yellow](color_palette/dull-yellow.png)
-
-Dark Yellow
-![Dark Yellow](color_palette/dark-yellow.png)
-
-Coral
-![Coral](color_palette/coral.png)
-
-Bright Orange
-![Bright Orange](color_palette/bright-orange.png)
-
-Pink
-![Pink](color_palette/pink.png)
-
-Light Purple
-![Light Purple](color_palette/light-purple.png)
-
-Medium Purple
-![Medium Purple](color_palette/med-purple.png)
-
-Dark Purple
-![Dark Purple](color_palette/dark-purple.png)
-
-Light Blue
-![Light Blue](color_palette/light-blue.png)
-
-Pale Mint
-![Pale Mint](color_palette/pale-mint.png)
-
-Mint
-![Mint](color_palette/mint.png)
-
-Deep Mint
-![Deep Mint](color_palette/deep-mint.png)
-
-Dark Teal
-![Dark Teal](color_palette/dark-teal.png)
-
-Extra Dark Teal
-![Extra Dark Teal](color_palette/extra-dark-teal.png)
-
-## About the project
-
-I came up with this idea after wanting to do something with music. I found this API and it let you search more than just music as well as giving recommendations. With this information, I decided  to put together a sort of favorites list that you can share with your friends. This app includes a user login with authentication features. Once logged in, after searching for music, movies, tv shows, or games, you can then add an item to your favorites list that will auto populate in your favorites for each category. You can sort and delete each item in a category and the number next to it automatically updates. After sorting, your top item in each category will show up on your profile page. You can then click on the share link to share a copy of your favorites list that doesn't require a login to view.
-
-This app is fully responsive for all devices and required custom formatting for many items. In addition, there are many custom animations that were built, both for fun/user enjoyment as well as out of necessity to achieve desired effects.
