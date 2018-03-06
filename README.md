@@ -4,8 +4,21 @@
 
 https://yo-favo.herokuapp.com/
 
+### Jump to...
+
+- [Technologies Used](https://github.com/ScoRoc/yo-favo#technologies-used)
+- [Routes](https://github.com/ScoRoc/yo-favo#routes)
+- [Models](https://github.com/ScoRoc/yo-favo#models)
+- [APIs Used](https://github.com/ScoRoc/yo-favo#apis-used)
+- [User Stories](https://github.com/ScoRoc/yo-favo#user-stories)
+- [About the project](https://github.com/ScoRoc/yo-favo#about-the-project)
+- [Styling/Animations](https://github.com/ScoRoc/yo-favo#styling--animations)
+- [Wireframes](https://github.com/ScoRoc/yo-favo#wireframes)
+- [Next Steps](https://github.com/ScoRoc/yo-favo#next-steps)
+
 ---
 ## Technologies Used
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 - HTML5 / CSS3
 - JavaScript
@@ -22,6 +35,7 @@ https://yo-favo.herokuapp.com/
 - Sequelize
 
 ## Routes
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 | CRUD   | ROUTE              | FUNCTIONALITY
 |--------|--------------------|--------------
@@ -45,6 +59,7 @@ https://yo-favo.herokuapp.com/
 | DELETE | /:id/favos/:favoId | Deletes a favo from the user's favorite list. This actually deletes the entry from the join table, as the favo itself still remains in the database.
 
 ## Models
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 #### favo
 
@@ -66,16 +81,19 @@ https://yo-favo.herokuapp.com/
 
 
 ## APIs Used
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 [Taste D!ve](https://tastedive.com/read/api) is the API that was used for this project. It is a website that allows you to search for music, movies, tv shows, games, and books and then get recommendations based on your liked items. The API will return the results of your search along with recommendations. Each result includes the Name of the item searched, the Category it falls under, a Teaser snippet from Wikipedia, a Wikipedia Url, and a YouTube Url.
 
 ## User Stories
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 1. ) As a lover of entertainment, I am constantly listening to new music, watching new movies and tv shows, and playing new games. I don't want to go to multiple places to share my current interests, so having one place to share everything I'm currently into is convenient and provides a snapshot of my likes at a given moment.
 
 2. ) I like to keep track of all of the recent movies and games I've watched so I can recommend them to all of my friends. I don't want to bombard them with links and with my busy schedule I can't be burdened of navigating multiple plaes to track this. With yo! favo, I can easily add my favorites, sort them, and share them with my friends - and I can do it from any device!
 
 ## About the project
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 This project was kicked off the same weekend I was going to go see [Lettuce](http://www.lettucefunk.com/) - killer funk band, AMAZING live. Go see them, seriously. I wanted to share them with a couple of friends and my first reaction was to go to Spotify and share from there. I then had the idea to have a whole favorites site that you can share with your friends. As opposed to being able to only share music on Spotify or movies/tv on Netflix/Hulu, I wanted a way to include all of your favorite items in one place. You can easily update this and send the page to your friends so they can see what your into at the moment, be it that day, week, month, or however often you want to set your favorites.
 
@@ -102,6 +120,7 @@ A small, but user pleasing detail is the fact that each tab will accurately disp
 The navbar adjust for mobile, with two major changes. The first is that the dropdowns become a sidenav that slides out from the right upon either clicking on the hamburger or swiping from the right edge of the screen. The second is that the search bar turns into a search icon that the user touches to bring up the search box.
 
 ## Styling / Animations
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 Perhaps one of the most important part of any product is it's style. If a user does not want to use something, they won't use it no matter how many features are packed in. Because of this, I wanted to design a website that would be engaging in color, layout, usage, and animations. Small details, like the footer having a triangular shape at it's top and appearing as though light is shining from one side of it's top to the other, engages the user and keeps them wanting to come back.
 
@@ -158,6 +177,7 @@ Here are all of the colors used in the project:
 ![Extra Dark Teal](color_palette/extra-dark-teal.png)
 
 ## Wireframes
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 - **Landing Page:** home page of the entire site
 - **Search Page:** the page rendered after searching for a favo
@@ -170,6 +190,7 @@ Here are all of the colors used in the project:
 Because of the length, the images of the wireframes are the last things on the README, after all other content.
 
 ## Next Steps
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
 There quite a few features I'd like to add in here. The more immediate ones being the homepage showing the most recently favorited item as well as the highest favorited item. I would also like to be able to show recommendations to similar items on each item's searched page. In addition, I'd like to show recommendations to the user on their own profile page.
 
@@ -224,3 +245,5 @@ Profile update page
 
 Profile shared page
 ![landing page](wireframes/mobile/mobile-shared-top-list.png)
+
+[to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
