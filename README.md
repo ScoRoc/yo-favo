@@ -32,7 +32,7 @@ yo! favo is a web app for favoriting your top music, movies, tv shows, and games
 ### Desktop
 
 Landing page
-![landing page](wireframes/desktop/desktop-landing-page.png =50x50)
+![landing page](wireframes/desktop/desktop-landing-page.png)
 
 Item page after search
 ![item page](wireframes/desktop/desktop-item-page.png)
@@ -41,7 +41,7 @@ Profile page
 ![landing page](wireframes/desktop/desktop-profile-page.png)
 
 Profile top page
-![landing page](wireframes/desktop/desktop-top-list.png)
+![landing page](wireframes/desktop/desktop-profile-top-list.png)
 
 Profile category page
 ![landing page](wireframes/desktop/desktop-profile-category-page.png)
@@ -64,13 +64,13 @@ Profile page
 ![landing page](wireframes/mobile/mobile-profile-page.png)
 
 Profile top page
-![landing page](wireframes/mobile/mobile-top-list.png)
+![landing page](wireframes/mobile/mobile-profile-top-list.png)
 
 Profile category page
 ![landing page](wireframes/mobile/mobile-profile-category-page.png)
 
 Profile update page
-![landing page](wireframes/mobile/mobile-update-page.png)
+![landing page](wireframes/mobile/mobile-profile-update-page.png)
 
 Profile shared page
 ![landing page](wireframes/mobile/mobile-shared-top-list.png)
@@ -78,10 +78,9 @@ Profile shared page
 ## Color Palette
 
 Off White
-![off white](color_palette/off-white.png)
+![off white](color_palette/off-white.png) | Bright Yellow ![Bright Yello](color_palette/bright-yellow.png)
 
-Bright Yellow
-![Bright Yello](color_palette/bright-yellow.png)
+
 
 Yellow
 ![Yellow](color_palette/yellow.png)
