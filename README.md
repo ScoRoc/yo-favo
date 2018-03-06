@@ -211,13 +211,13 @@ Here are all of the colors used in the project:
 ## Wireframes
 [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
 
-- **Landing Page:** home page of the entire site
-- **Search Page:** the page rendered after searching for a favo
-- **Profile Page:** original idea for the main user profile page
-- **Profile Top List Page:** original idea for a users top list page, which ended up becoming the main user profile page
-- **Profile Top Category Page:** user profile page showing their favos for a specific category
-- **Profile Update Page:** the page where a user can update their info
-- **Profile Shared Page:** unauthenticated page showing a user's top list - meant as a page to share your favos with your friends because you can't change anything and you don't need to be logged in to view it
+- [Desktop](https://github.com/ScoRoc/yo-favo#landing-page) | [Mobile](https://github.com/ScoRoc/yo-favo#landing-page-1) | **Landing Page:** home page of the entire site
+- [Desktop](https://github.com/ScoRoc/yo-favo#item-page-after-search) | [Mobile](https://github.com/ScoRoc/yo-favo#item-page-after-search-1) | **Search Page:** the page rendered after searching for a favo
+- [Desktop](https://github.com/ScoRoc/yo-favo#profile-page) | [Mobile](https://github.com/ScoRoc/yo-favo#profile-page-1) | **Profile Page:** original idea for the main user profile page
+- [Desktop](https://github.com/ScoRoc/yo-favo#profile-top-page) | [Mobile](https://github.com/ScoRoc/yo-favo#profile-top-page-1) | **Profile Top List Page:** original idea for a users top list page, which ended up becoming the main user profile page
+- [Desktop](https://github.com/ScoRoc/yo-favo#profile-category-page) | [Mobile](https://github.com/ScoRoc/yo-favo#profile-category-page-1) | **Profile Top Category Page:** user profile page showing their favos for a specific category
+- [Desktop](https://github.com/ScoRoc/yo-favo#profile-update-page) | [Mobile](https://github.com/ScoRoc/yo-favo#profile-update-page-1) | **Profile Update Page:** the page where a user can update their info
+- [Desktop](https://github.com/ScoRoc/yo-favo#profile-shared-page) | [Mobile](https://github.com/ScoRoc/yo-favo#profile-shared-page-1##### ) | **Profile Shared Page:** unauthenticated page showing a user's top list - meant as a page to share your favos with your friends because you can't change anything and you don't need to be logged in to view it
 
 Because of the length, the images of the wireframes are the last things on the README, after all other content.
 
@@ -232,28 +232,30 @@ A more lofty goal would be to integrate other sites with this app. For example, 
 
 Here is a collection of screenshots throughout the week of various stages on various pages. This will give you a glimpse of what the app looked like from the start to the end.
 
-Initial homepage showing API results:
+##### Initial homepage showing API results:
 ![homepage with api results](wip_screenshots/home_page_with_api_results.png)
 
-Initial profile page:
+##### Initial profile page:
 ![profile page](wip_screenshots/profile_page.png)
 
-Top category page with sortable element:
+##### Top category page with sortable element:
 ![profile top tv](wip_screenshots/profile_top_tv_sortable.png)
 
-Mobile top category page with sortable element:
+##### Mobile top category page with sortable element:
 ![profile mobile](wip_screenshots/profile_mobile_top_tv_sortable.png)
 
-Blocking out the rows and columns for styling purposes:
+##### Blocking out the rows and columns for styling purposes:
 ![profile page row col blockout](wip_screenshots/profile_page_row_col_blockout.png)
 
-Nearly completed landing page:
+##### Nearly completed landing page:
 ![landing page](wip_screenshots/landing_page_starter_styling.png)
 
 *END of content. Wireframe images below*
 
 ### Desktop
 [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+
+Desktop wireframes
 
 ##### Landing page
 [Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
@@ -287,6 +289,8 @@ Nearly completed landing page:
 
 ### Mobile
 [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
+
+Mobile wireframes
 
 ##### Landing page
 [Wireframe Menu](https://github.com/ScoRoc/yo-favo#wireframes) | [to the top](https://github.com/ScoRoc/yo-favo#yo-favo)
