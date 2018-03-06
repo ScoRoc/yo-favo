@@ -4,6 +4,9 @@
 
 https://yo-favo.herokuapp.com/
 
+yo!favo Homepage
+![yo! favo homepage](finished_screenshots/homepage.png)
+
 ### Jump to...
 
 - [Technologies Used](https://github.com/ScoRoc/yo-favo#technologies-used)
@@ -128,37 +131,61 @@ Perhaps one of the most important part of any product is it's style. If a user d
 
 ##### Logo
 
+![logo](animation_screenshots/logo.png)
+
 The main logo on the home page was designed to be sort of throwback, with blocked out shapes and bright colors; each color ties into the color of each favo. The entire logo sits on a slightly translucent backdrop to separate it from the page. The shapes are flat on the backdrop without box-shadow. However, notice as the shapes edge off the side of the backdrop they actually gain a deeper box-shadow than the backdrop. This is to make you feel like there actually is some dimension, even though they appear 2D at first glance. The logo has 4 animations that it loops through. The shapes do the same movement each time, simply shifting positions - though the blue circle does turn purple during the third loop. The logo itself does three different things: 1) flips around it's x axis 360 degrees, 2) grows inside and gains an outline, and 3) shrinks in size to fit inside the yellow shape and moves with it across the logo field.
 
 ##### Navbar Logo
+
+![navbar logo](animation_screenshots/navbar-logo.png)  ![navbar logo changed](animation_screenshots/navbar-logo-changed.png)
 
 A smaller version of the logo that stays with the user on each page, including mobile. Hovering the mouse over the logo or holding your finger on this logo will trigger it's animation. The logo appears as one item on the navbar but after triggering the animation it splits into 3 sections. The box and shapes inside it grow in size and rotate -15 degrees. The word 'yo' rotates and grows the same but as the box/shapes but it pops out of the box and sits below it after the rotation. The word 'favo' grows the same but rotates even farther at -90 degrees. It also moves slightly to line up it's 'o' with the 'o' in yo. All of the colors for the entire logo shift during this animation.
 
 ##### FAB buttons (Fixed Action Buttons in the bottom right hand corner)
 
+![all fab](animation_screenshots/all-fab.png)
+
 Although the FAB is a default Materialize item, I wanted to break away from Materialize's feel by giving each sub FAB their own animation. Upon hovering the main FAB, the other FABs show up and reveal their first animation: each FAB grows and shrinks bringing the user's eye to them. Hovering each sub FAB reveals their own additional animation.
 
 ###### LinkedIn
+
+![linkedin fab](animation_screenshots/linkedin.png)
 
 This FAB breaks away from it's box-shadow and zooms out of view to the right, then back on screen from the left. The box-shadow does the opposite.
 
 ###### Github
 
+![github](animation_screenshots/github.png)
+
 This FAB grows and rotates in a rocking manner.
 
 ###### Codepen
+
+![codepen](animation_screenshots/codepen.png)
 
 This FAB blurs to the point where you can barely see it and then becomes transparent. While invisible, it shifts to a position above where it first was and then becomes opaque again. The blur is reduced to reveal the FAB and then it slowly drops down back into place. This animation gives a vanish/reveal magic trick sort of vibe.
 
 ###### Soundcloud
 
+![soundcloud](animation_screenshots/soundcloud.png)
+
 Being that this is a link to my band's Soundcloud, I thought it fitting to have music notes float upwards from this FAB upon hover. Each music note fades to 100% transparency and returns to the base only to float up again, providing a seemingly never-ending stream of notes.
 
+##### Mobile Search Box
+
+![mobile nav darken](animation_screenshots/mobile-nav-darken.png)
+
+On mobile, the search box turns into a search button which the user must touch to bring up. I wanted to keep the mobile view clean and removing the search box seemed the way to go. Once the user touches search icon, the search box appears and the rest of the screen dims to bring the user's focus to the search box. The user can either type in the box and hit enter or they can touch outside the box to close it.
+
 ##### Add Favo Button
+
+![add favo](animation_screenshots/add-favo.png)  ![add favo changed](animation_screenshots/add-favo-changed.png)
 
 This button starts off mostly flat and purple. The first animation has the edges start to glow red and then the button pulses an orange/yellow border to call attention to it. Upon hovering over it the colors invert and the rectangle turns into an oval.
 
 ##### Submit Buttons (Login/Signup pages)
+
+![submit](animation_screenshots/submit.png)  ![submit changed](animation_screenshots/submit-changed.png)
 
 These are much simpler animations where the colors just invert and the button grows slightly upon hovering.
 
@@ -195,6 +222,28 @@ Because of the length, the images of the wireframes are the last things on the R
 There quite a few features I'd like to add in here. The more immediate ones being the homepage showing the most recently favorited item as well as the highest favorited item. I would also like to be able to show recommendations to similar items on each item's searched page. In addition, I'd like to show recommendations to the user on their own profile page.
 
 A more lofty goal would be to integrate other sites with this app. For example, linking your Spotify, Hulu, Netflix, and Steam accounts would allow you to favorite items you've watched/listened to/played or conversely, if you favorite one on yo! favo it would allow you to automatically add it to your other appropriate account.
+
+## Work In Progress Screenshots
+
+Here is a collection of screenshots throughout the week of various stages on various pages. This will give you a glimpse of what the app looked like from the start to the end.
+
+Initial homepage showing API results:
+![homepage with api results](wip_screenshots/home_page_with_api_results.png)
+
+Initial profile page:
+![profile page](wip_screenshots/profile_page.png)
+
+Top category page with sortable element:
+![profile top tv](wip_screenshots/profile_top_tv_sortable.png)
+
+Mobile top category page with sortable element:
+![profile mobile](wip_screenshots/profile_mobile_top_tv_sortable.png)
+
+Blocking out the rows and columns for styling purposes:
+![profile page row col blockout](wip_screenshots/profile_page_row_col_blockout.png)
+
+Nearly completed landing page:
+![landing page](wip_screenshots/landing_page_starter_styling.png)
 
 *END of content. Wireframe images below*
 
